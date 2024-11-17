@@ -1,47 +1,121 @@
-import { useState } from "react";
-import HeadBanner from "./components/HeadBanner";
-import ExperienceShowcase from "./components/ExperienceShowcase";
+import React, { Suspense, useState, useEffect } from "react";
+
+const HeadBanner = React.lazy(() => import("./components/HeadBanner"));
+const ExperienceShowcase = React.lazy(() =>
+  import("./components/ExperienceShowcase")
+);
+const Services = React.lazy(() => import("./components/Services"));
 import {
   constructionImg,
   consultingImg,
   interiorImg,
   propertyImg,
 } from "./assets/images";
-import Services from "./components/Services";
+const Projects = React.lazy(() => import("./components/Projects"));
+const ClientStories = React.lazy(() => import("./components/ClientStories"));
+const InnovatingSpaces = React.lazy(() =>
+  import("./components/InnovatingSpaces")
+);
+const Contact = React.lazy(() => import("./components/contact"));
+const Footer = React.lazy(() => import("./components/Footer"));
 
 function App() {
+  const [activeHash, setActiveHash] = useState(window.location.hash);
+
+  // Update active hash when the hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   return (
-    <div className=" bg-black p-7">
-      <HeadBanner />
-      <ExperienceShowcase />
-      <Services
-        backgroundImage={constructionImg}
-        title="CONSTRUCTION"
-        description="We build enduring, high-quality structures with precision, craftsmanship, and a commitment to excellence."
-        parentClassName="-mt-5"
-        curveClassName="rounded-t-[8rem]"
-      />
-      <Services
-        backgroundImage={consultingImg}
-        title="CONSULTING"
-        description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
-        parentClassName="mt-0"
-        curveClassName="rounded-t-[8rem]"
-      />
-      <Services
-        backgroundImage={interiorImg}
-        title="INTERIOR DESIGN"
-        description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
-        parentClassName="mt-0"
-        curveClassName="rounded-t-[8rem]"
-      />
-      <Services
-        backgroundImage={propertyImg}
-        title="PROPERTY MANAGEMENT"
-        description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
-        parentClassName="mt-0"
-        curveClassName="rounded-[8rem]"
-      />
+    <div>
+      <Suspense
+        fallback={
+          <section className="w-full rounded-xl h-screen bg-white flex flex-col justify-center items-center">
+            <div
+              className="animate-spin inline-block size-16 border-[3px] border-current border-t-transparent text-blue-800 rounded-full"
+              role="status"
+              aria-label="loading"
+            ></div>
+            <span className="text-gray-500 mt-4">Loading...</span>
+          </section>
+        }
+      >
+        <div className="bg-[#1A1A1A] p-7">
+          <HeadBanner />
+          <div
+            id="about"
+            className={`${
+              activeHash === "#about" ? "text-gray-800 bg-white" : ""
+            }`}
+          >
+            <ExperienceShowcase />
+          </div>
+          <div
+            id="service"
+            className={`${
+              activeHash === "#service" ? "text-gray-800 bg-white" : ""
+            }`}
+          >
+            <Services
+              backgroundImage={constructionImg}
+              title="CONSTRUCTION"
+              description="We build enduring, high-quality structures with precision, craftsmanship, and a commitment to excellence."
+              parentClassName="-mt-5"
+              curveClassName="rounded-t-[8rem]"
+            />
+          </div>
+
+          <Services
+            backgroundImage={consultingImg}
+            title="CONSULTING"
+            description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+            parentClassName="mt-0"
+            curveClassName="rounded-t-[8rem]"
+          />
+          <Services
+            backgroundImage={interiorImg}
+            title="INTERIOR DESIGN"
+            description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
+            parentClassName="mt-0"
+            curveClassName="rounded-t-[8rem]"
+          />
+          <Services
+            backgroundImage={propertyImg}
+            title="PROPERTY MANAGEMENT"
+            description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
+            parentClassName="mt-0"
+            curveClassName="rounded-[8rem]"
+          />
+          <div
+            id="projects"
+            className={`${
+              activeHash === "#projects" ? "text-gray-800 bg-white" : ""
+            }`}
+          >
+            <Projects />
+          </div>
+          <ClientStories />
+          <InnovatingSpaces />
+          <div
+            id="contact"
+            className={`${
+              activeHash === "#contact" ? "text-gray-800 bg-white" : ""
+            }`}
+          >
+            <Contact />
+          </div>
+          <Footer />
+        </div>
+      </Suspense>
     </div>
   );
 }

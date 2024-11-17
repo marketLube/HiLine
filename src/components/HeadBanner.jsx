@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io"; // Ensure these are installed via `react-icons`
 import { image1 } from "../assets/images";
 import { GrFormNextLink } from "react-icons/gr";
+import LogoHiline from "./LogoHiline";
 
 const HeadBanner = () => {
   const instagram =
@@ -19,17 +20,17 @@ const HeadBanner = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
-        <div className="container relative py-36 z-10 text-center ">
-          <div className="-space-y-4 flex flex-col mx-auto">
-            <span className="text-white text-3xl font-normal md:text-8xl md:leading-tight">
+        <div className="relative py-52 z-10 text-center ">
+          <div className="-space-y-5 flex flex-col mb-24">
+            <span className="text-white text-3xl font-normal md:text-[6.5rem]">
               YOUR
             </span>
 
-            <span className="text-white text-3xl font-normal md:text-8xl font-serif tracking-tighter leading-loose">
+            <span className="text-white text-3xl font-normal md:text-[7rem] font-serif tracking-tighter leading-loose">
               DREAM
             </span>
 
-            <span className="text-white text-3xl font-normal md:text-8xl md:leading-tight">
+            <span className="text-white text-3xl font-normal md:text-[6.5rem]">
               PLACE
             </span>
           </div>
@@ -77,82 +78,82 @@ const HeadBanner = () => {
       </section>
 
       {/* Header Section */}
-      <div className="absolute top-10 left-0 right-0 flex justify-between items-center py-2 md:py-5 xl:py-1 md:mt-0 px-5 md:px-10 xl:pr-24">
+      <div className="absolute top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}
         <div className="block lg:hidden mt-2">
           <IoMdMenu className="text-white w-7 h-7" />
         </div>
-
         {/* Logo */}
-        <div className="w-42 cursor-pointer h-10 lg:w-24 lg:h-14 rounded-lg">
-          <img
-            src={image1}
-            alt="Logo"
+        <div className="w-42 cursor-pointe h-auto lg:w-36 rounded-lg">
+          <LogoHiline
             className="w-full h-full rounded-lg object-contain mt-2"
             onClick={() => window.scrollTo(0, 0)}
           />
         </div>
-
         {/* Mobile Color Toggle */}
         <div className="block lg:hidden mt-2">
-          <img src={image1} className="w-7 h-7" alt="Paints & Colors" />
+          <LogoHiline className="w-7 h-7" />
         </div>
-
         {/* Navigation Links */}
-        <section className="hidden lg:flex justify-center font-semibold text-sm items-center h-14 px-6 bg-black text-white rounded-full">
-          <div className="space-x-4 font-sans">
+        <section className="relative w-1/3 hidden lg:flex justify-center text-lg items-center h-16 bg-[#1A1A1A] text-white rounded-full">
+          <div className="absolute z-10 space-x-4 font-sans">
             <a
-              className={`relative rounded-md cursor-pointer px-2 py-1 text-center font-thin ${
-                location.pathname === "/"
-                  ? "text-gray-200"
-                  : "hover:text-gray-400"
+              href="#home"
+              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
+                window.location.hash === "#home"
+                  ? "text-gray-800 font-semibold bg-white rounded-[4rem] py-0.5 "
+                  : "hover:text-gray-400 font-thin"
               }`}
             >
               Home
             </a>
 
             <a
-              className={`relative rounded-md px-2 py-1 cursor-pointer text-center font-thin ${
-                location.pathname === "/"
-                  ? "text-gray-200"
-                  : "hover:text-gray-400"
+              href="#about"
+              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
+                window.location.hash === "#about"
+                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
+                  : "hover:text-gray-400 font-thin"
               }`}
             >
               About
             </a>
             <a
-              className={`relative rounded-md cursor-pointer px-2 py-1 text-center font-thin ${
-                location.pathname === "/"
-                  ? "text-gray-200"
-                  : "hover:text-gray-400"
+              href="#service"
+              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
+                window.location.hash === "#service"
+                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
+                  : "hover:text-gray-400 font-thin"
               }`}
             >
               Service
             </a>
 
             <a
-              className={`relative rounded-md px-2 py-1 cursor-pointer text-center font-thin ${
-                location.pathname === "/"
-                  ? "text-gray-200"
-                  : "hover:text-gray-400"
+              href="#projects"
+              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
+                window.location.hash === "#projects"
+                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
+                  : "hover:text-gray-400 font-thin"
               }`}
             >
               Projects
             </a>
             <a
+              href="#contact"
               className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                location.pathname === "/"
-                  ? "text-gray-800 bg-white rounded-3xl font-medium"
-                  : "hover:text-gray-400"
+                window.location.hash === "#contact"
+                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
+                  : "hover:text-gray-400 font-thin"
               }`}
             >
               Contact
             </a>
           </div>
         </section>
-
-        <div className="hidden lg:block flex flex-col">
-          <div className="flex justify-center">
+        {/* media links */}
+        <div className=" hidden lg:flex flex-col">
+          <div className=" flex justify-center">
             {/* facebook */}
             <a
               href={facebook}
@@ -183,10 +184,10 @@ const HeadBanner = () => {
 
             {/* whatsapp */}
             <a
-              href="whatsapp://send?phone=+9526457322"
+              href="whatsapp://send?phone=+9633747727"
               target="_blank"
               className="[&>svg]:h-3.5 [&>svg]:w-3.5 hover:text-gray-500 bg-white rounded-full p-2"
-              onclick="if (!window.open('whatsapp://send?phone=+9526457322', '_blank')) window.location.href='https://wa.me/9526457322';"
+              onclick="if (!window.open('whatsapp://send?phone=+9633747727', '_blank')) window.location.href='https://wa.me/9633747727';"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
