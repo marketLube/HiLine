@@ -48,7 +48,7 @@ function App() {
           </section>
         }
       >
-        <div className="bg-[#1A1A1A] p-5 lg:p-7">
+        <div className="bg-[#1A1A1A] p-3 md:p-5 lg:p-7">
           <HeadBanner />
           <div
             id="about"
@@ -70,7 +70,7 @@ function App() {
               title="CONSTRUCTION"
               description="We build enduring, high-quality structures with precision, craftsmanship, and a commitment to excellence."
               parentClassName="-mt-5"
-              curveClassName="md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              curveClassName="rounded-t-3xl rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
             />
           </div>
           <div>
@@ -79,7 +79,7 @@ function App() {
               title="CONSULTING"
               description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
               parentClassName="mt-0"
-              curveClassName="md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
             />
           </div>
           <div>
@@ -88,7 +88,7 @@ function App() {
               title="INTERIOR DESIGN"
               description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
               parentClassName="mt-0"
-              curveClassName="md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
             />
           </div>
           <div>
@@ -97,7 +97,7 @@ function App() {
               title="PROPERTY MANAGEMENT"
               description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
               parentClassName="mt-0"
-              curveClassName="md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
+              curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
             />
           </div>
 

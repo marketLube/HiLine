@@ -21,12 +21,12 @@ const ClientStories = () => {
   return (
     <section
       id="testimonies"
-      className="md:pt-14 lg:pt-20 md:pb-20 lg:pb-28 xl:pb-36 bg-gray-100"
+      className="pt-8 md:pt-14 lg:pt-20 pb-8 md:pb-20 lg:pb-28 xl:pb-36 bg-gray-100"
     >
       <div className="max-w-full md:px-10 lg:px-16 xl:px-32">
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-          <div className="mb-16 space-y-5 lg:mb-20 md:text-center">
-            <p className="text-xl text-gray-700 md:text-center">
+          <div className="mb-14 md:mb-16 space-y-5 lg:mb-24 text-center">
+            <p className="text-lg md:text-xl text-gray-700 text-center">
               CLIENT STORIES
             </p>
           </div>
@@ -64,7 +64,7 @@ const ClientStories = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
+                className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
               />
             </SwiperSlide>
           ))}

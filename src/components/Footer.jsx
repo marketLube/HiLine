@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-col w-full">
         <div className="flex">
           <div className="w-1/2 flex justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
-            <div className="lg:w-64 xl:w-96">
+            <div className="w-24 md:w-64 xl:w-96">
               <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14">
                 <LogoHiline />
               </div>
@@ -41,25 +41,25 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/2 flex justify-center items-center flex-col md:py-16 xl:py-28 px-10">
+          <div className="w-1/2 flex justify-center items-center flex-col py-8 md:py-16 xl:py-28 px-10">
             <div className="lg:space-y-11 xl:space-y-12 md:text-lg lg:text-xl xl:text-2xl font-thin">
               <div className="mb-4 flex justify-center md:justify-start ">
                 <div>
-                  <p className="w-72">
+                  <p className="w-52 md:w-72">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt ut{" "}
                   </p>
                 </div>
               </div>
-              <div className="mb-4 flex items-center justify-center md:justify-start">
+              <div className="mb-4 flex items-center justify-start">
                 <a href="mailto:hello@hiline.com">hello@hiline.com</a>
               </div>
 
-              <div className="mb-4 flex items-center justify-center md:justify-start ">
+              <div className="mb-4 flex items-center justify-start ">
                 +91 9526457322
               </div>
 
-              <div className="flex items-center justify-center md:justify-start ">
+              <div className="flex items-center justify-start ">
                 <div className="flex justify-center">
                   {/* facebook */}
                   <a
@@ -114,7 +114,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black/5 font-thin text-xl pb-6 text-center">
+        <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center">
           <span>made by </span>
           <a className=" underline" href="#">
             Marketlube

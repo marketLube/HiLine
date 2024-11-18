@@ -14,7 +14,7 @@ const InnovatingSpaces = () => {
 
   return (
     <div
-      className="flex w-full md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden relative"
+      className="flex w-full h-80 md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden relative"
       onMouseMove={handleSliderMove}
       onTouchMove={(e) =>
         handleSliderMove({
@@ -25,7 +25,7 @@ const InnovatingSpaces = () => {
     >
       {/* First Image */}
       <div
-        className="absolute top-0 left-0 h-full bg-cover bg-center transition-[width] duration-75 ease-linear"
+        className="absolute top-0 left-0 h-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${innovatingSpace1Img})`,
           width: `${sliderPosition}%`,
@@ -34,7 +34,7 @@ const InnovatingSpaces = () => {
 
       {/* Second Image */}
       <div
-        className="absolute top-0 right-0 h-full bg-cover bg-center transition-[width] duration-75 ease-linear"
+        className="absolute top-0 right-0 h-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${innovatingSpace2Img})`,
           width: `${100 - sliderPosition}%`,
@@ -42,8 +42,8 @@ const InnovatingSpaces = () => {
       ></div>
 
       {/* Overlay Text */}
-      <div className="absolute inset-0 flex items-end justify-start md:p-16 xl:p-28 pointer-events-none">
-        <h1 className="md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white ">
+      <div className="absolute inset-0 flex items-end justify-start p-9 md:p-16 xl:p-28 pointer-events-none">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white ">
           INNOVATING SPACES
         </h1>
       </div>
@@ -51,7 +51,7 @@ const InnovatingSpaces = () => {
       {/* Slider Pointer */}
       <div className="absolute top-0 left-0 h-full w-full pointer-events-none">
         <div
-          className="absolute top-0 bottom-0 bg-white w-[3px] -translate-x-1/2 pointer-events-auto transition-transform duration-75 ease-linear"
+          className="absolute top-0 bottom-0 bg-white w-[3px] -translate-x-1/2 pointer-events-auto"
           style={{ left: `${sliderPosition}%` }}
         >
           <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center bg-white justify-center h-24 w-3.5"></div>
