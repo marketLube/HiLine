@@ -16,52 +16,28 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="hidden lg:block text-2xl font-thin space-y-10">
-              <div
-                className={`mb-4 ${
-                  location.pathname === "/privacy-policy" ? "  " : ""
-                }`}
-              >
-                <button>Home</button>
-              </div>
-              <div
-                className={`mb-4 ${
-                  location.pathname === "/terms-and-conditions" ? "  " : ""
-                }`}
-              >
-                <button>About</button>
-              </div>
-              <div
-                className={`mb-4 ${
-                  location.pathname ===
-                  "/environmental-and-sustainability-policy"
-                    ? "  "
-                    : ""
-                }`}
-              >
-                <button>Services</button>
-              </div>
-              <div
-                className={`mb-4 ${
-                  location.pathname === "/health-and-safety-policy" ? "  " : ""
-                }`}
-              >
-                <button>Projects</button>
-              </div>
-              <div
-                className={`mb-4 ${
-                  location.pathname === "/warranty-policy" ? "  " : ""
-                }`}
-              >
-                <button>Testimonial</button>
-              </div>
-              <div
-                className={`mb-4 ${
-                  location.pathname === "/warranty-policy" ? "  " : ""
-                }`}
-              >
-                <button>Contact</button>
-              </div>
+            <div className="hidden lg:block text-2xl font-thin space-y-7">
+              {[
+                { href: "#home", label: "Home" },
+                { href: "#about", label: "About" },
+                { href: "#service", label: "Services" },
+                { href: "#projects", label: "Projects" },
+                { href: "#testimonial", label: "Testimonial" },
+                { href: "#contact", label: "Contact" },
+              ].map(({ href, label }) => (
+                <div key={href} className="mb-4">
+                  <a
+                    href={href}
+                    className={`w-full block text-left px-6 py-2 font-thin ${
+                      window.location.hash === href
+                        ? "text-gray-800 bg-white rounded-2xl"
+                        : "hover:text-gray-400"
+                    }`}
+                  >
+                    {label}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
           <div className="w-1/2 flex justify-center items-center flex-col py-28 px-10">
@@ -74,9 +50,10 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="mb-4 flex items-center justify-center md:justify-start ">
-                hello@hiline.com
+              <div className="mb-4 flex items-center justify-center md:justify-start">
+                <a href="mailto:hello@hiline.com">hello@hiline.com</a>
               </div>
+
               <div className="mb-4 flex items-center justify-center md:justify-start ">
                 +91 9526457322
               </div>

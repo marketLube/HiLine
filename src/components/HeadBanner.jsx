@@ -1,5 +1,5 @@
 import React from "react";
-import { IoMdClose, IoMdMenu } from "react-icons/io"; // Ensure these are installed via `react-icons`
+import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { image1 } from "../assets/images";
 import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
@@ -12,66 +12,70 @@ const HeadBanner = () => {
   return (
     <div className="relative">
       <section
-        id="hero"
-        className="relative w-full rounded-t-[3.5rem] bg-cover"
+        className="relative w-full rounded-t-[3.5rem] bg-cover bg-center xl:bg-top"
         style={{
           backgroundImage: `url(${image1})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
-        <div className="relative py-52 z-10 text-center ">
-          <div className="-space-y-5 flex flex-col mb-24">
-            <span className="text-white text-3xl font-normal md:text-[6.5rem]">
+        <div className="relative md:py-32 lg:py-40 z-10 text-center ">
+          <div className="flex flex-col md:mb-8 lg:mb-12 xl:mb-14">
+            {/* <div className="flex flex-col pb-14"> */}
+
+            <span className="text-white font-sans md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
               YOUR
             </span>
 
-            <span className="text-white text-3xl font-normal md:text-[7rem] font-serif tracking-tighter leading-loose">
+            <span className="text-white font-normal md:text-6xl lg:text-[4.5rem] xl:text-[7rem] font-serif tracking-tighter leading-loose">
               DREAM
             </span>
-
-            <span className="text-white text-3xl font-normal md:text-[6.5rem]">
+            <span className="text-white font-sans md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
               PLACE
             </span>
           </div>
-          <div className="mt-12 -space-y-8">
-            <h1 className="text-white text-lg font-light mb-7 md:text-2xl md:leading-snug">
+          <div className="md:pb-36 lg:pb-52 xl:pb-60 -space-y-8">
+            <h1 className="text-white text-lg font-light mb-7 lg:text-xl xl:text-2xl leading-snug">
               Bringing your vision to life with quality,
             </h1>
-            <h1 className="text-white text-lg font-light md:text-2xl md:leading-snug">
+            <h1 className="text-white text-lg font-light lg:text-xl xl:text-2xl leading-snug">
               expertise, integrity, and precision.
             </h1>
           </div>
         </div>
 
-        <div className="relative pt-96 pb-44 z-10 flex justify-between px-28">
+        <div className="relative md:mt-16 xl:mt-36 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between md:px-8 lf:px-10 xl:px-28">
           <div className="flex flex-col">
-            <span className="text-white text-lg font-semibold md:text-5xl md:leading-tight">
+            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
               We love & live
             </span>
 
-            <span className="text-white text-lg font-semibold md:text-5xl md:leading-tight">
+            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
               craftsmanship
             </span>
 
-            <span className="text-white text-base mt-5 font-thin md:text-xl md:leading-tight flex items-center space-x-2">
+            <span className="text-white text-base md:mt-2 lg:mt-5 font-thin lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
               Our Story
-              <GrFormNextLink className="w-14 h-14 ml-7 rounded-full border p-3 border-white" />
+              <GrFormNextLink className="md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
             </span>
           </div>
-          <div className="w-1/2 px-20 flex flex-col ">
-            <span className="text-white text-lg font-light mb-7 md:text-[28px] md:leading-snug">
+          <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
+            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
               Hiline Construction has been a trusted name in the construction
-              industry for <br /> over 10 years.
+              industry for <br className="hidden xl:block" /> over 10 years.
             </span>
-            <span className="text-white text-lg font-light mb-7 md:text-[28px] md:leading-snug">
-              We have successfully completed 250+ <br /> projects, focusing on
-              residential and <br /> commercial spaces with precision and <br />
+            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+              We have successfully completed 250+{" "}
+              <br className="hidden xl:block" /> projects, focusing on
+              residential and <br className="hidden xl:block" /> commercial
+              spaces with precision and <br className="hidden xl:block" />
               quality.
             </span>
-            <span className="text-white text-lg font-light mb-7 md:text-[28px] md:leading-snug">
-              Our dedicated team ensures every <br /> project is completed to
-              the highest <br /> standards, delivering lasting results.
+            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+              Our dedicated team ensures every{" "}
+              <br className="hidden xl:block" /> project is completed to the
+              highest <br className="hidden xl:block" /> standards, delivering
+              lasting results.
             </span>
           </div>
         </div>
@@ -80,80 +84,51 @@ const HeadBanner = () => {
       {/* Header Section */}
       <div className="absolute top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}
-        <div className="block lg:hidden mt-2">
-          <IoMdMenu className="text-white w-7 h-7" />
+        <div className="flex justify-between items-center lg:hidden mt-2 w-7/12">
+          <IoMdMenu className="text-white w-8 h-8" />
+          <div className="w-24 h-12 cursor-pointer">
+            <LogoHiline
+              className="h-full w-full rounded-lg object-contain"
+              onClick={() => window.scrollTo(0, 0)}
+            />
+          </div>
         </div>
+
         {/* Logo */}
-        <div className="w-42 cursor-pointe h-auto lg:w-36 rounded-lg">
+        <div className="w-42 cursor-pointer h-auto lg:w-36 rounded-lg">
           <LogoHiline
             className="w-full h-full rounded-lg object-contain mt-2"
             onClick={() => window.scrollTo(0, 0)}
           />
         </div>
-        {/* Mobile Color Toggle */}
-        <div className="block lg:hidden mt-2">
-          <LogoHiline className="w-7 h-7" />
-        </div>
-        {/* Navigation Links */}
-        <section className="relative w-1/3 hidden lg:flex justify-center text-lg items-center h-16 bg-[#1A1A1A] text-white rounded-full">
-          <div className="absolute z-10 space-x-4 font-sans">
-            <a
-              href="#home"
-              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                window.location.hash === "#home"
-                  ? "text-gray-800 font-semibold bg-white rounded-[4rem] py-0.5 "
-                  : "hover:text-gray-400 font-thin"
-              }`}
-            >
-              Home
-            </a>
 
-            <a
-              href="#about"
-              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                window.location.hash === "#about"
-                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
-                  : "hover:text-gray-400 font-thin"
-              }`}
-            >
-              About
-            </a>
-            <a
-              href="#service"
-              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                window.location.hash === "#service"
-                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
-                  : "hover:text-gray-400 font-thin"
-              }`}
-            >
-              Service
-            </a>
-
-            <a
-              href="#projects"
-              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                window.location.hash === "#projects"
-                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
-                  : "hover:text-gray-400 font-thin"
-              }`}
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              className={`relative rounded-md cursor-pointer px-3 py-1 text-center ${
-                window.location.hash === "#contact"
-                  ? "text-gray-800 bg-white rounded-[4rem] py-0.5 font-medium"
-                  : "hover:text-gray-400 font-thin"
-              }`}
-            >
-              Contact
-            </a>
+        <section className="relative w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-16 bg-[#1A1A1A] text-white rounded-full">
+          <div className="absolute z-10 lg:space-x-2 xl:space-x-4 font-sans flex">
+            {[
+              { href: "#home", label: "Home" },
+              { href: "#about", label: "About" },
+              { href: "#service", label: "Service" },
+              { href: "#projects", label: "Projects" },
+              { href: "#contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                className={`relative flex items-center justify-center cursor-pointer px-3 py-0.5 text-center ${
+                  window.location.hash === href
+                    ? "text-gray-800 font-semibold bg-white rounded-full"
+                    : "hover:text-gray-400 font-thin"
+                }`}
+              >
+                {label}
+              </a>
+            ))}
           </div>
         </section>
+
         {/* media links */}
-        <div className=" hidden lg:flex flex-col">
-          <div className=" flex justify-center">
+        <div className="relative md:w-9 lg:w-32 xl:w-32 hidden md:flex justify-center items-center h-16">
+          <div className="absolute z-10 flex justify-center">
             {/* facebook */}
             <a
               href={facebook}
