@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { innovatingSpace1Img, innovatingSpace2Img } from "../assets/images";
 
 const InnovatingSpaces = () => {
-  const [sliderPosition, setSliderPosition] = useState(62);
+  const [sliderPosition, setSliderPosition] = useState(65);
+  const [pointerPosition, setPointerPosition] = useState(50);
 
   const handleSliderMove = (e) => {
     const sliderContainer = e.currentTarget.getBoundingClientRect();
@@ -12,49 +13,67 @@ const InnovatingSpaces = () => {
     setSliderPosition(Math.min(100, Math.max(0, newSliderPosition)));
   };
 
+  const handlePointerMove = (e) => {
+    const sliderContainer = e.currentTarget.getBoundingClientRect();
+    const newPointerPosition =
+      ((e.clientY - sliderContainer.top) / sliderContainer.height) * 100;
+
+    setPointerPosition(Math.min(100, Math.max(0, newPointerPosition)));
+  };
+
   return (
     <div
-      className="flex w-full h-80 md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden relative"
-      onMouseMove={handleSliderMove}
-      onTouchMove={(e) =>
+      className="relative flex w-full h-80 md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden"
+      onMouseMove={(e) => {
+        handleSliderMove(e);
+        handlePointerMove(e);
+      }}
+      onTouchMove={(e) => {
         handleSliderMove({
           clientX: e.touches[0].clientX,
           currentTarget: e.currentTarget,
-        })
-      }
+        });
+        handlePointerMove({
+          clientY: e.touches[0].clientY,
+          currentTarget: e.currentTarget,
+        });
+      }}
     >
       {/* First Image */}
       <div
-        className="absolute top-0 left-0 h-full bg-cover bg-center"
+        className="absolute inset-0 h-full w-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${innovatingSpace1Img})`,
-          width: `${sliderPosition}%`,
+          clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
         }}
       ></div>
 
       {/* Second Image */}
       <div
-        className="absolute top-0 right-0 h-full bg-cover bg-center"
+        className="absolute inset-0 h-full w-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${innovatingSpace2Img})`,
-          width: `${100 - sliderPosition}%`,
+          clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
         }}
       ></div>
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex items-end justify-start p-9 md:p-16 xl:p-28 pointer-events-none">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white ">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white">
           INNOVATING SPACES
         </h1>
       </div>
 
       {/* Slider Pointer */}
-      <div className="absolute top-0 left-0 h-full w-full pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-0 bottom-0 bg-white w-[3px] -translate-x-1/2 pointer-events-auto"
           style={{ left: `${sliderPosition}%` }}
         >
-          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center bg-white justify-center h-24 w-3.5"></div>
+          <div
+            className="absolute bg-white justify-center w-3.5 h-24 -translate-x-1/2"
+            style={{ top: `${pointerPosition}%` }}
+          ></div>
         </div>
       </div>
     </div>

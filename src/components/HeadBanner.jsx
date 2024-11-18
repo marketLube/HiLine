@@ -155,11 +155,9 @@ const HeadBanner = () => {
               className="text-white w-7 h-7 self-end cursor-pointer"
             />
             <a
-              href="#home"
+              href="/"
               className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#home"
-                  ? "bg-gray-200 text-gray-700"
-                  : ""
+                location.pathname === "/" ? "bg-gray-200 text-gray-700" : ""
               }`}
             >
               Home

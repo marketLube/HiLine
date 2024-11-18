@@ -49,7 +49,12 @@ function App() {
         }
       >
         <div className="bg-[#1A1A1A] p-3 md:p-5 lg:p-7">
-          <HeadBanner />
+          <div
+            id="/"
+            className={`${activeHash === "/" ? "text-gray-800 bg-white" : ""}`}
+          >
+            <HeadBanner />
+          </div>
           <div
             id="about"
             className={`${
@@ -62,7 +67,7 @@ function App() {
           <div
             id="service"
             className={`${
-              activeHash === "#about" ? "text-gray-800 bg-white" : ""
+              activeHash === "#service" ? "text-gray-800 bg-white" : ""
             }`}
           >
             <Services
@@ -97,14 +102,14 @@ function App() {
               title="PROPERTY MANAGEMENT"
               description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
               parentClassName="mt-0"
-              curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
+              curveClassName=" rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
             />
           </div>
 
           <div
-            id="service"
+            id="projects"
             className={`${
-              activeHash === "#service" ? "text-gray-800 bg-white" : ""
+              activeHash === "#projects" ? "text-gray-800 bg-white" : ""
             }`}
           >
             <Projects />
