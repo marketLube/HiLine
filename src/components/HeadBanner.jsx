@@ -38,11 +38,21 @@ const HeadBanner = () => {
   return (
     <div className="relative">
       <section
-        className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top"
+        className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top "
         style={{
-          backgroundImage: `url(${imageArray[currentImageIndex]})`,
+          overflow: "hidden",
         }}
       >
+        <Parallax
+          speed={-50}
+          className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
+          style={{
+            backgroundImage: `url(${imageArray[currentImageIndex]})`,
+            backgroundSize: "100%", // Ensures the entire image is visible
+            backgroundRepeat: "no-repeat", // Prevents tiling of the image
+          }}
+        ></Parallax>
+
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
         <div className="relative py-20 md:py-32 lg:py-40 xl:py-44 z-10 text-center ">
@@ -67,43 +77,45 @@ const HeadBanner = () => {
             </h1>
           </div>
         </div>
+        <Parallax speed={25}>
+          <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28">
+            <div className="flex flex-col">
+              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+                We love & live
+              </span>
 
-        <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28">
-          <div className="flex flex-col">
-            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
-              We love & live
-            </span>
+              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+                craftsmanship
+              </span>
 
-            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
-              craftsmanship
-            </span>
-
-            <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
-              Our Story
-              <GrFormNextLink className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
-            </span>
+              <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
+                Our Story
+                <GrFormNextLink className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
+              </span>
+            </div>
+            <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                Hiline Construction has been a trusted name in the construction
+                industry for <br className="hidden xl:block" /> over 10 years.
+              </span>
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                We have successfully completed 250+{" "}
+                <br className="hidden xl:block" /> projects, focusing on
+                residential and <br className="hidden xl:block" /> commercial
+                spaces with precision and <br className="hidden xl:block" />
+                quality.
+              </span>
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                Our dedicated team ensures every{" "}
+                <br className="hidden xl:block" /> project is completed to the
+                highest <br className="hidden xl:block" /> standards, delivering
+                lasting results.
+              </span>
+            </div>
           </div>
-          <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
-            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              Hiline Construction has been a trusted name in the construction
-              industry for <br className="hidden xl:block" /> over 10 years.
-            </span>
-            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              We have successfully completed 250+{" "}
-              <br className="hidden xl:block" /> projects, focusing on
-              residential and <br className="hidden xl:block" /> commercial
-              spaces with precision and <br className="hidden xl:block" />
-              quality.
-            </span>
-            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              Our dedicated team ensures every{" "}
-              <br className="hidden xl:block" /> project is completed to the
-              highest <br className="hidden xl:block" /> standards, delivering
-              lasting results.
-            </span>
-          </div>
-        </div>
+        </Parallax>
       </section>
+
       {/* Header Section */}
       <div className="absolute top-2 md:top-4 lg:top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}
@@ -204,7 +216,15 @@ const HeadBanner = () => {
           />
         </div>
 
-        <section className="relative lg:w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm items-center h-16 bg-[#1A1A1A] text-white rounded-full">
+        <section
+          className="fixed xl:w-[450px] hidden lg:flex justify-center lg:text-sm items-center h-12 bg-[#1A1A1A] text-white rounded-full"
+          style={{
+            top: "5rem",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 1000000,
+          }}
+        >
           <div className="absolute z-10 lg:space-x-2 xl:space-x-5 font-sans flex">
             {[
               { href: "#home", label: "Home" },
