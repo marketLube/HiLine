@@ -10,12 +10,14 @@ import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
 import { Parallax, useParallax } from "react-scroll-parallax";
 
+const mainBg = "../assets/1hilinetop-01.webp";
+
 const HeadBanner = () => {
   const instagram =
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
-  const imageArray = [image1];
+  const imageArray = [mainBg];
   //   project1Img, project2Img, project3Img
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);

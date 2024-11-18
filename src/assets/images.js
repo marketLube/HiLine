@@ -1,5 +1,4 @@
-export { default as image1 } from "./image1.png";
-
+export { default as image1 } from "./1hilinetop-01.webp";
 
 export { default as constructionImg } from "./construction.png";
 export { default as consultingImg } from "./consulting.jpg";
