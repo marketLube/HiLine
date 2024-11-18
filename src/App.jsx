@@ -97,7 +97,7 @@ function App() {
               title="PROPERTY MANAGEMENT"
               description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
               parentClassName="mt-0"
-              curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
+              curveClassName=" rounded-[2rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
             />
           </div>
 
