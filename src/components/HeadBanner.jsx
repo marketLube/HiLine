@@ -8,6 +8,7 @@ import {
 } from "../assets/images";
 import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
+import { Parallax, useParallax } from "react-scroll-parallax";
 
 const HeadBanner = () => {
   const instagram =
@@ -103,7 +104,6 @@ const HeadBanner = () => {
           </div>
         </div>
       </section>
-
       {/* Header Section */}
       <div className="absolute top-2 md:top-4 lg:top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}

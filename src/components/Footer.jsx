@@ -1,5 +1,6 @@
 import React from "react";
 import LogoHiline from "./LogoHiline";
+import { Parallax } from "react-scroll-parallax";
 
 const Footer = () => {
   const instagram =
