@@ -14,9 +14,10 @@ const HeadBanner = () => {
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
-  const imageArray = [image1, project1Img, project2Img, project3Img];
-
+  const imageArray = [image1];
+  //   project1Img, project2Img, project3Img
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
@@ -27,42 +28,46 @@ const HeadBanner = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const toggleMenu = () => {
+    console.log("here im");
+
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="relative">
       <section
-        className="relative w-full rounded-t-[3.5rem] bg-cover bg-center xl:bg-top"
+        className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top"
         style={{
           backgroundImage: `url(${imageArray[currentImageIndex]})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
-        <div className="relative md:py-32 lg:py-40 z-10 text-center ">
-          <div className="flex flex-col md:mb-8 lg:mb-12 xl:mb-14">
-            {/* <div className="flex flex-col pb-14"> */}
-
-            <span className="text-white font-sans md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
+        <div className="relative py-20 md:py-32 lg:py-40 xl:py-56 z-10 text-center ">
+          <div className="flex flex-col -space-y-5 md:-space-y-0 mb-2 md:mb-8 lg:mb-12 xl:mb-14">
+            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
               YOUR
             </span>
 
-            <span className="text-white font-normal md:text-6xl lg:text-[4.5rem] xl:text-[7rem] font-serif tracking-tighter leading-loose">
+            <span className="text-white font-normal text-4xl md:text-6xl lg:text-[4.5rem] xl:text-[7rem] font-serif tracking-tighter leading-loose">
               DREAM
             </span>
-            <span className="text-white font-sans md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
+            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
               PLACE
             </span>
           </div>
-          <div className="md:pb-36 lg:pb-52 xl:pb-60 -space-y-8">
-            <h1 className="text-white text-lg font-light mb-7 lg:text-xl xl:text-2xl leading-snug">
+          <div className="pb-28 md:pb-36 lg:pb-52 xl:pb-60 -space-y-8">
+            <h1 className="text-white text-sm md:text-lg font-light mb-7 lg:text-xl xl:text-2xl leading-snug">
               Bringing your vision to life with quality,
             </h1>
-            <h1 className="text-white text-lg font-light lg:text-xl xl:text-2xl leading-snug">
+            <h1 className="text-white text-sm md:text-lg font-light lg:text-xl xl:text-2xl leading-snug">
               expertise, integrity, and precision.
             </h1>
           </div>
         </div>
 
-        <div className="relative md:mt-16 xl:mt-36 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between md:px-8 lf:px-10 xl:px-28">
+        <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28">
           <div className="flex flex-col">
             <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
               We love & live
@@ -72,24 +77,24 @@ const HeadBanner = () => {
               craftsmanship
             </span>
 
-            <span className="text-white text-base md:mt-2 lg:mt-5 font-thin lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
+            <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
               Our Story
-              <GrFormNextLink className="md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
+              <GrFormNextLink className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
             </span>
           </div>
           <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
               Hiline Construction has been a trusted name in the construction
               industry for <br className="hidden xl:block" /> over 10 years.
             </span>
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
               We have successfully completed 250+{" "}
               <br className="hidden xl:block" /> projects, focusing on
               residential and <br className="hidden xl:block" /> commercial
               spaces with precision and <br className="hidden xl:block" />
               quality.
             </span>
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+            <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
               Our dedicated team ensures every{" "}
               <br className="hidden xl:block" /> project is completed to the
               highest <br className="hidden xl:block" /> standards, delivering
@@ -100,28 +105,107 @@ const HeadBanner = () => {
       </section>
 
       {/* Header Section */}
-      <div className="absolute top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
+      <div className="absolute top-2 md:top-4 lg:top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}
-        <div className="flex justify-between items-center lg:hidden mt-2 w-7/12">
-          <IoMdMenu className="text-white w-8 h-8" />
-          <div className="w-24 h-12 cursor-pointer">
+        <div className="relative flex justify-between items-center lg:hidden mt-2 w-full md:w-7/12">
+          <div className="hidden md:flex justify-center">
+            <IoMdMenu
+              onClick={toggleMenu}
+              className="absolute z-10 -mt-7 hidden md:block text-white w-8 h-8"
+            />
+          </div>
+
+          <div className="w-20 h-10 md:mr-3 lg:mr-0 cursor-pointer">
             <LogoHiline
               className="h-full w-full rounded-lg object-contain"
               onClick={() => window.scrollTo(0, 0)}
             />
           </div>
+          <div className="mr-6">
+            <IoMdMenu
+              onClick={toggleMenu}
+              className="absolute z-10 block md:hidden text-white -mt-4 w-6 h-6"
+            />
+          </div>
+        </div>
+
+        {/* Sliding Mobile Menu */}
+        <div
+          className={`fixed transition-all duration-300 ease-in-out text-white bg-[#1A1A1A] w-1/2 md:w-1/3 lg:hidden h-full top-0 ${
+            isMenuOpen
+              ? "right-0 translate-x-0 z-50"
+              : "right-[-100%] translate-x-full"
+          }`}
+        >
+          <div className="flex flex-col space-y-4 p-4">
+            <IoMdClose
+              onClick={toggleMenu}
+              className="text-white w-7 h-7 self-end cursor-pointer"
+            />
+            <a
+              href="#home"
+              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
+                window.location.hash === "#home"
+                  ? "bg-gray-200 text-gray-700"
+                  : ""
+              }`}
+            >
+              Home
+            </a>
+
+            <a
+              href="#about"
+              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
+                window.location.hash === "#about"
+                  ? "bg-gray-200 text-gray-700"
+                  : ""
+              }`}
+            >
+              About
+            </a>
+            <a
+              href="#service"
+              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
+                window.location.hash === "#service"
+                  ? "bg-gray-200 text-gray-700"
+                  : ""
+              }`}
+            >
+              Service
+            </a>
+            <a
+              href="#projects"
+              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
+                window.location.hash === "#projects"
+                  ? "bg-gray-200 text-gray-700"
+                  : ""
+              }`}
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
+                window.location.hash === "#contact"
+                  ? "bg-gray-200 text-gray-700"
+                  : ""
+              }`}
+            >
+              Contact
+            </a>
+          </div>
         </div>
 
         {/* Logo */}
-        <div className="w-42 cursor-pointer h-auto lg:w-36 rounded-lg">
+        <div className="hidden md:block w-42 cursor-pointer h-auto lg:w-40 rounded-lg">
           <LogoHiline
             className="w-full h-full rounded-lg object-contain mt-2"
             onClick={() => window.scrollTo(0, 0)}
           />
         </div>
 
-        <section className="relative w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-16 bg-[#1A1A1A] text-white rounded-full">
-          <div className="absolute z-10 lg:space-x-2 xl:space-x-4 font-sans flex">
+        <section className="relative lg:w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-16 xl:h-[4.5rem] bg-[#1A1A1A] text-white rounded-full">
+          <div className="absolute z-10 lg:space-x-2 xl:space-x-6 font-sans flex">
             {[
               { href: "#home", label: "Home" },
               { href: "#about", label: "About" },
@@ -145,12 +229,12 @@ const HeadBanner = () => {
         </section>
 
         {/* media links */}
-        <div className="relative md:w-9 lg:w-32 xl:w-32 hidden md:flex justify-center items-center h-16">
+        <div className="relative md:w-32 hidden md:flex justify-center items-center h-16">
           <div className="absolute z-10 flex justify-center">
             {/* facebook */}
             <a
               href={facebook}
-              className="me-3 [&>svg]:h-3.5 [&>svg]:w-3.5 hover:text-gray-500 bg-white rounded-full p-2"
+              className="me-3 [&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +248,7 @@ const HeadBanner = () => {
             {/* insta  */}
             <a
               href={instagram}
-              className="me-3 [&>svg]:h-3.5 [&>svg]:w-3.5 hover:text-gray-500 bg-white rounded-full p-2"
+              className="me-3 [&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +263,7 @@ const HeadBanner = () => {
             <a
               href="whatsapp://send?phone=+9633747727"
               target="_blank"
-              className="[&>svg]:h-3.5 [&>svg]:w-3.5 hover:text-gray-500 bg-white rounded-full p-2"
+              className="[&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
               onclick="if (!window.open('whatsapp://send?phone=+9633747727', '_blank')) window.location.href='https://wa.me/9633747727';"
             >
               <svg
