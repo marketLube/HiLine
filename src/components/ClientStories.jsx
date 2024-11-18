@@ -1,4 +1,11 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import { image1 } from "../assets/images";
 
 const ClientStories = () => {
@@ -6,7 +13,9 @@ const ClientStories = () => {
     { id: 1, src: image1, alt: "Image 1" },
     { id: 2, src: image1, alt: "Image 2" },
     { id: 3, src: image1, alt: "Image 3" },
-    // { id: 4, src: image1, alt: "Image 4" },
+    { id: 4, src: image1, alt: "Image 4" },
+    { id: 5, src: image1, alt: "Image 5" },
+    { id: 6, src: image1, alt: "Image 6" },
   ];
 
   return (
@@ -22,15 +31,44 @@ const ClientStories = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 xl:grid-cols-4 md:gap-5 lg:gap-10">
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          breakpoints={{
+            375: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
+          className="mb-7"
+        >
           {images.map((image) => (
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full md:h-72 lg:h-96 xl:h-[500px] rounded-2xl"
-            />
+            <SwiperSlide key={image.id} className="flex justify-center">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
+              />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
