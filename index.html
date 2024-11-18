@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,5 +9,147 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- <script>
+      function smoothScroll() {
+        let scrollAmount = 0;
+        let scrollVelocity = 0;
+        let isScrolling = false;
+        let lastTouchY = 0;
+        let lastScrollTime = Date.now();
+        const throttleDelay = 5;
+
+        // Balanced momentum constants
+        const FRICTION = 0.1; // Increased friction to reduce overshooting
+        const MOMENTUM_MULTIPLIER = 0.15; // Reduced for more controlled momentum
+        const VELOCITY_THRESHOLD = 0.15; // Adjusted threshold
+        const SCROLL_MULTIPLIER = 0.5; // Reduced for more balanced initial scroll
+        const CONTINUATION_BOOST = 0.7; // Reduced boost factor
+
+        function throttle(callback, delay) {
+          let timeoutId;
+          let lastCallTime = 0;
+
+          return function (...args) {
+            const currentTime = Date.now();
+
+            if (currentTime - lastCallTime < delay) {
+              clearTimeout(timeoutId);
+              timeoutId = setTimeout(() => {
+                lastCallTime = currentTime;
+                callback.apply(this, args);
+              }, delay);
+              return;
+            }
+
+            lastCallTime = currentTime;
+            callback.apply(this, args);
+          };
+        }
+
+        function handleScroll(delta) {
+          const currentTime = Date.now();
+          const elapsed = currentTime - lastScrollTime;
+
+          // Add direction-based adjustment
+          const directionMultiplier = delta > 0 ? 1 : 0.8; // Reduce upward scroll speed
+
+          // Smoother velocity calculation
+          const newVelocity =
+            (delta * SCROLL_MULTIPLIER * directionMultiplier) /
+            Math.max(elapsed, 16);
+          scrollVelocity = scrollVelocity * 0.8 + newVelocity * 0.2; // More gradual velocity blending
+
+          // Add to scroll amount with direction adjustment
+          scrollAmount += delta * SCROLL_MULTIPLIER * directionMultiplier;
+
+          lastScrollTime = currentTime;
+
+          if (!isScrolling) {
+            isScrolling = true;
+            requestAnimationFrame(smoothStep);
+          }
+        }
+
+        function applyMomentum() {
+          // Direction-aware momentum
+          const directionMultiplier = scrollVelocity > 0 ? 1 : 0.8;
+
+          if (Math.abs(scrollVelocity) > VELOCITY_THRESHOLD * 2) {
+            scrollAmount +=
+              scrollVelocity *
+              MOMENTUM_MULTIPLIER *
+              CONTINUATION_BOOST *
+              directionMultiplier;
+          } else {
+            scrollAmount +=
+              scrollVelocity * MOMENTUM_MULTIPLIER * directionMultiplier;
+          }
+
+          scrollVelocity *= FRICTION;
+
+          if (Math.abs(scrollVelocity) < VELOCITY_THRESHOLD) {
+            scrollVelocity *= 0.9; // Faster fadeout
+          }
+        }
+
+        function smoothStep() {
+          if (
+            Math.abs(scrollAmount) > 0.01 ||
+            Math.abs(scrollVelocity) > VELOCITY_THRESHOLD
+          ) {
+            const scrollStep = scrollAmount * 0.12; // Reduced for smoother movement
+
+            window.scrollBy(0, scrollStep);
+            scrollAmount -= scrollStep;
+
+            applyMomentum();
+            requestAnimationFrame(smoothStep);
+          } else {
+            if (Math.abs(scrollVelocity) > VELOCITY_THRESHOLD * 0.5) {
+              scrollAmount += scrollVelocity * CONTINUATION_BOOST;
+              requestAnimationFrame(smoothStep);
+            } else {
+              scrollAmount = 0;
+              scrollVelocity = 0;
+              isScrolling = false;
+            }
+          }
+        }
+
+        const throttledScroll = throttle((delta) => {
+          handleScroll(delta);
+        }, throttleDelay);
+
+        // Wheel event handler
+        window.addEventListener(
+          "wheel",
+          (event) => {
+            event.preventDefault();
+            throttledScroll(event.deltaY);
+          },
+          { passive: false }
+        );
+
+        // Touch event handlers
+        window.addEventListener("touchstart", (event) => {
+          lastTouchY = event.touches[0].clientY;
+          scrollVelocity *= 0.3; // Reduced initial velocity on touch
+        });
+
+        window.addEventListener("touchmove", (event) => {
+          const currentTouchY = event.touches[0].clientY;
+          const deltaY = lastTouchY - currentTouchY;
+          throttledScroll(deltaY);
+          lastTouchY = currentTouchY;
+        });
+
+        window.addEventListener("touchend", () => {
+          scrollVelocity *= MOMENTUM_MULTIPLIER * 0.8; // Reduced final momentum
+          lastTouchY = 0;
+        });
+      }
+
+      smoothScroll();
+    </script> -->
   </body>
 </html>

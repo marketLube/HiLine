@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoMdClose, IoMdMenu } from "react-icons/io";
+import { IoMdMenu } from "react-icons/io";
 import {
   image1,
   project1Img,
@@ -8,6 +8,7 @@ import {
 } from "../assets/images";
 import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
+import { Parallax, useParallax } from "react-scroll-parallax";
 
 const HeadBanner = () => {
   const instagram =
@@ -17,15 +18,6 @@ const HeadBanner = () => {
   const imageArray = [image1, project1Img, project2Img, project3Img];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
 
   return (
     <div className="relative">
@@ -62,43 +54,44 @@ const HeadBanner = () => {
           </div>
         </div>
 
-        <div className="relative md:mt-16 xl:mt-36 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between md:px-8 lf:px-10 xl:px-28">
-          <div className="flex flex-col">
-            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
-              We love & live
-            </span>
+        <Parallax speed={20}>
+          <div className="relative md:mt-16 xl:mt-36 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between md:px-8 lf:px-10 xl:px-28">
+            <div className="flex flex-col">
+              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight ">
+                We love & live
+              </span>
 
-            <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
-              craftsmanship
-            </span>
+              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+                craftsmanship
+              </span>
 
-            <span className="text-white text-base md:mt-2 lg:mt-5 font-thin lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
-              Our Story
-              <GrFormNextLink className="md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
-            </span>
+              <span className="text-white text-base md:mt-2 lg:mt-5 font-thin lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
+                Our Story
+                <GrFormNextLink className="md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
+              </span>
+            </div>
+            <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
+              <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                Hiline Construction has been a trusted name in the construction
+                industry for <br className="hidden xl:block" /> over 10 years.
+              </span>
+              <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                We have successfully completed 250+{" "}
+                <br className="hidden xl:block" /> projects, focusing on
+                residential and <br className="hidden xl:block" /> commercial
+                spaces with precision and <br className="hidden xl:block" />
+                quality.
+              </span>
+              <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
+                Our dedicated team ensures every{" "}
+                <br className="hidden xl:block" /> project is completed to the
+                highest <br className="hidden xl:block" /> standards, delivering
+                lasting results.
+              </span>
+            </div>
           </div>
-          <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              Hiline Construction has been a trusted name in the construction
-              industry for <br className="hidden xl:block" /> over 10 years.
-            </span>
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              We have successfully completed 250+{" "}
-              <br className="hidden xl:block" /> projects, focusing on
-              residential and <br className="hidden xl:block" /> commercial
-              spaces with precision and <br className="hidden xl:block" />
-              quality.
-            </span>
-            <span className="text-white text-lg font-light mb-7 lg:text-xl xl:text-[28px] leading-snug">
-              Our dedicated team ensures every{" "}
-              <br className="hidden xl:block" /> project is completed to the
-              highest <br className="hidden xl:block" /> standards, delivering
-              lasting results.
-            </span>
-          </div>
-        </div>
+        </Parallax>
       </section>
-
       {/* Header Section */}
       <div className="absolute top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
         {/* Mobile Menu Toggle */}
@@ -120,8 +113,16 @@ const HeadBanner = () => {
           />
         </div>
 
-        <section className="relative w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-16 bg-[#1A1A1A] text-white rounded-full">
-          <div className="absolute z-10 lg:space-x-2 xl:space-x-4 font-sans flex">
+        <section
+          className="fixed xl:w-[500px] hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-14 bg-[#1A1A1A] text-white rounded-full"
+          style={{
+            top: "5rem",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 1000000,
+          }}
+        >
+          <div className="absolute z-10 lg:space-x-2 xl:space-x-4 flex">
             {[
               { href: "#home", label: "Home" },
               { href: "#about", label: "About" },
