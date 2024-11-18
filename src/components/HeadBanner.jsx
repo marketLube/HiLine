@@ -44,16 +44,16 @@ const HeadBanner = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
-        <div className="relative py-20 md:py-32 lg:py-40 xl:py-56 z-10 text-center ">
+        <div className="relative py-20 md:py-32 lg:py-40 xl:py-44 z-10 text-center ">
           <div className="flex flex-col -space-y-5 md:-space-y-0 mb-2 md:mb-8 lg:mb-12 xl:mb-14">
-            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
+            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6rem]">
               YOUR
             </span>
 
-            <span className="text-white font-normal text-4xl md:text-6xl lg:text-[4.5rem] xl:text-[7rem] font-serif tracking-tighter leading-loose">
+            <span className="text-white font-normal text-4xl md:text-6xl lg:text-[4.5rem] xl:text-[6rem] font-serif tracking-tighter leading-loose">
               DREAM
             </span>
-            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6.5rem]">
+            <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6rem]">
               PLACE
             </span>
           </div>
@@ -204,8 +204,8 @@ const HeadBanner = () => {
           />
         </div>
 
-        <section className="relative lg:w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm xl:text-lg items-center h-16 xl:h-[4.5rem] bg-[#1A1A1A] text-white rounded-full">
-          <div className="absolute z-10 lg:space-x-2 xl:space-x-6 font-sans flex">
+        <section className="relative lg:w-96 xl:w-1/3 hidden lg:flex justify-center lg:text-sm items-center h-16 bg-[#1A1A1A] text-white rounded-full">
+          <div className="absolute z-10 lg:space-x-2 xl:space-x-5 font-sans flex">
             {[
               { href: "#home", label: "Home" },
               { href: "#about", label: "About" },
