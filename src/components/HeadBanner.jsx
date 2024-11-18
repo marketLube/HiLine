@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { image1 } from "../assets/images";
+import {
+  image1,
+  project1Img,
+  project2Img,
+  project3Img,
+} from "../assets/images";
 import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
 
@@ -9,12 +14,25 @@ const HeadBanner = () => {
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
+  const imageArray = [image1, project1Img, project2Img, project3Img];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageArray.length);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextImage, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="relative">
       <section
         className="relative w-full rounded-t-[3.5rem] bg-cover bg-center xl:bg-top"
         style={{
-          backgroundImage: `url(${image1})`,
+          backgroundImage: `url(${imageArray[currentImageIndex]})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
