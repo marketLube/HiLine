@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import LogoHiline from "./LogoHiline";
 
 const Footer = () => {
@@ -6,17 +6,17 @@ const Footer = () => {
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
   return (
-    <footer className="bg-[#1A1A1A] h-3/4 text-gray-200 flex justify-between">
+    <footer className="bg-[#1A1A1A] xl:h-3/4 text-gray-200 flex justify-between">
       <div className="flex flex-col w-full">
         <div className="flex">
-          <div className="w-1/2 flex justify-between items-center py-28 px-24">
-            <div className="md:w-96">
+          <div className="w-1/2 flex justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
+            <div className="lg:w-64 xl:w-96">
               <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14">
                 <LogoHiline />
               </div>
             </div>
 
-            <div className="hidden lg:block text-2xl font-thin space-y-7">
+            <div className="hidden lg:block lg:text-xl xl:text-2xl font-thin lg:space-y-4 xl:space-y-7">
               {[
                 { href: "#home", label: "Home" },
                 { href: "#about", label: "About" },
@@ -40,8 +40,8 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/2 flex justify-center items-center flex-col py-28 px-10">
-            <div className="space-y-12 text-2xl font-thin">
+          <div className="w-1/2 flex justify-center items-center flex-col md:py-16 xl:py-28 px-10">
+            <div className="lg:space-y-11 xl:space-y-12 md:text-lg lg:text-xl xl:text-2xl font-thin">
               <div className="mb-4 flex justify-center md:justify-start ">
                 <div>
                   <p className="w-72">
@@ -113,7 +113,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black/5 font-thin text-xl p-6 text-center">
+        <div className="bg-black/5 font-thin text-xl pb-6 text-center">
           <span>made by </span>
           <a className=" underline" href="#">
             Marketlube

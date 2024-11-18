@@ -2,16 +2,16 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-white h-screen w-full flex flex-col justify-center items-center rounded-b-[5.2c:\Users\HP\Desktop\Official works\SR-Naturals\userfrontend\src\components\Footer\Footer.jsxrem]">
+    <div className="bg-white md:h-[28rem] lg:h-[35rem] xl:h-screen w-full flex flex-col justify-center items-center md:rounded-b-[3rem] lg:rounded-b-[4rem] xl:rounded-b-[6rem]">
       <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-        <div className="mb-12 space-y-5 md:mb-14 md:text-center">
-          <p className="text-xl text-gray-700 md:text-center">CONTACT</p>
+        <div className="mb-12 space-y-5 md:mb-14">
+          <p className="text-xl text-gray-700 text-center">CONTACT</p>
         </div>
       </div>
-      <h5 className=" text-8xl font-semibold text-center mb-5 text-black">
+      <h5 className="md:text-5xl lg:text-6xl xl:text-8xl font-semibold text-center md:mb-3 lg:mb-5 text-black">
         Curious what we can
       </h5>
-      <h5 className=" text-8xl font-semibold text-center mb-20 text-black">
+      <h5 className="md:text-5xl lg:text-6xl xl:text-8xl font-semibold text-center md:mb-16 lg:mb-20 text-black">
         do for you?
       </h5>
       <button

@@ -14,7 +14,7 @@ const InnovatingSpaces = () => {
 
   return (
     <div
-      className="flex w-full h-screen overflow-hidden relative"
+      className="flex w-full md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden relative"
       onMouseMove={handleSliderMove}
       onTouchMove={(e) =>
         handleSliderMove({
@@ -42,8 +42,10 @@ const InnovatingSpaces = () => {
       ></div>
 
       {/* Overlay Text */}
-      <div className="absolute inset-0 flex items-end justify-start p-28 pointer-events-none">
-        <h1 className="text-7xl font-bold text-white ">INNOVATING SPACES</h1>
+      <div className="absolute inset-0 flex items-end justify-start md:p-16 xl:p-28 pointer-events-none">
+        <h1 className="md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white ">
+          INNOVATING SPACES
+        </h1>
       </div>
 
       {/* Slider Pointer */}
