@@ -64,46 +64,49 @@ function App() {
             <ExperienceShowcase />
           </div>
 
-          <div
-            id="service"
-            className={`${
-              activeHash === "#service" ? "text-gray-800 bg-white" : ""
-            }`}
-          >
-            <Services
-              backgroundImage={constructionImg}
-              title="CONSTRUCTION"
-              description="We build enduring, high-quality structures with precision, craftsmanship, and a commitment to excellence."
-              parentClassName="-mt-5"
-              curveClassName="rounded-t-3xl rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
-            />
-          </div>
-          <div>
-            <Services
-              backgroundImage={consultingImg}
-              title="CONSULTING"
-              description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
-              parentClassName="mt-0"
-              curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
-            />
-          </div>
-          <div>
-            <Services
-              backgroundImage={interiorImg}
-              title="INTERIOR DESIGN"
-              description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
-              parentClassName="mt-0"
-              curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
-            />
-          </div>
-          <div>
-            <Services
-              backgroundImage={propertyImg}
-              title="PROPERTY MANAGEMENT"
-              description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
-              parentClassName="mt-0"
-              curveClassName=" rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] rounded-[8rem]"
-            />
+          <div className="relative">
+            <div
+              id="service"
+              className={`sticky top-0 h-screen flex flex-col items-center justify-center  ${
+                activeHash === "#service" ? "text-gray-800 bg-white" : ""
+              }`}
+            >
+              <Services
+                backgroundImage={constructionImg}
+                title="CONSULTING"
+                description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+                parentClassName="mt-0"
+                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              />
+            </div>
+
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-center ">
+              <Services
+                backgroundImage={consultingImg}
+                title="CONSULTING"
+                description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+                parentClassName="mt-0"
+                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              />
+            </div>
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-center ">
+              <Services
+                backgroundImage={interiorImg}
+                title="INTERIOR DESIGN"
+                description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
+                parentClassName="mt-0"
+                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+              />
+            </div>
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-center ">
+              <Services
+                backgroundImage={propertyImg}
+                title="PROPERTY MANAGEMENT"
+                description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
+                parentClassName="mt-0"
+                curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+              />
+            </div>
           </div>
 
           <div

@@ -5,7 +5,7 @@ import { FaRegClock } from "react-icons/fa";
 
 const ExperienceShowcase = () => {
   return (
-    <div className="relative w-full bg-white rounded-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16">
+    <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16">
       <div className="relative container mx-auto text-center z-10">
         <div className="w-full flex items-center justify-center md:px-12">
           <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center">
