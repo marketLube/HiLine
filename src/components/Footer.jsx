@@ -12,12 +12,12 @@ const Footer = () => {
         <div className="flex">
           <div className="w-1/2 flex justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
             <div className="w-24 md:w-64 xl:w-96">
-              <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14">
+              <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm">
                 <LogoHiline />
               </div>
             </div>
 
-            <div className="hidden lg:block lg:text-xl xl:text-2xl font-thin lg:space-y-4 xl:space-y-7">
+            <div className="hidden lg:block lg:text-xl xl:text-2xl lg:space-y-4 xl:space-y-7">
               {[
                 { href: "#home", label: "Home" },
                 { href: "#about", label: "About" },
@@ -29,9 +29,9 @@ const Footer = () => {
                 <div key={href} className="mb-4">
                   <a
                     href={href}
-                    className={`w-full block text-left px-6 py-2 font-thin ${
+                    className={`w-full block  px-4 py-1 font-thin text-sm ${
                       window.location.hash === href
-                        ? "text-gray-800 bg-white rounded-2xl"
+                        ? "text-gray-800 bg-white rounded-lg"
                         : "hover:text-gray-400"
                     }`}
                   >
@@ -45,17 +45,19 @@ const Footer = () => {
             <div className="lg:space-y-11 xl:space-y-12 md:text-lg lg:text-xl xl:text-2xl font-thin">
               <div className="mb-4 flex justify-center md:justify-start ">
                 <div>
-                  <p className="w-52 md:w-72">
+                  <p className="w-52 md:w-72 font-thin text-sm">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt ut{" "}
                   </p>
                 </div>
               </div>
               <div className="mb-4 flex items-center justify-start">
-                <a href="mailto:hello@hiline.com">hello@hiline.com</a>
+                <a href="mailto:hello@hiline.com font-thin text-sm">
+                  hello@hiline.com
+                </a>
               </div>
 
-              <div className="mb-4 flex items-center justify-start ">
+              <div className="mb-4 flex items-center justify-start font-thin text-sm">
                 +91 9526457322
               </div>
 
