@@ -8,7 +8,6 @@ const Services = ({
   curveClassName = "",
 }) => {
   return (
-    // <div className={``}>
       <section
         id="hero"
         className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem] ${curveClassName}${parentClassName}`}
@@ -32,7 +31,6 @@ const Services = ({
           </button>
         </div>
       </section>
-    // </div>
   );
 };
 
