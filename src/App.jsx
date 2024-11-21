@@ -1,8 +1,6 @@
 import React, { Suspense, useState, useEffect } from "react";
 const HeadBanner = React.lazy(() => import("./components/HeadBanner"));
-const ExperienceShowcase = React.lazy(() =>
-  import("./components/ExperienceShowcase")
-);
+
 const Services = React.lazy(() => import("./components/Services"));
 import {
   constructionImg,
@@ -10,6 +8,7 @@ import {
   interiorImg,
   propertyImg,
 } from "./assets/images";
+import ExperienceShowcase from "./components/ExperienceShowcase";
 const Projects = React.lazy(() => import("./components/Projects"));
 const ClientStories = React.lazy(() => import("./components/ClientStories"));
 const InnovatingSpaces = React.lazy(() =>
