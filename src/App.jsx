@@ -7,13 +7,14 @@ import {
   propertyImg,
 } from "./assets/images";
 import ExperienceShowcase from "./components/ExperienceShowcase";
-import Contact from "./components/contact";
+
 import Projects from "./components/Projects";
 import ClientStories from "./components/ClientStories";
 import InnovatingSpaces from "./components/InnovatingSpaces";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import HeadBanner from "./components/HeadBanner";
+import Contact from "./components/Contact";
 
 function App() {
   const [activeHash, setActiveHash] = useState(window.location.hash);
