@@ -1,7 +1,5 @@
 import React, { Suspense, useState, useEffect } from "react";
-const HeadBanner = React.lazy(() => import("./components/HeadBanner"));
 
-const Services = React.lazy(() => import("./components/Services"));
 import {
   constructionImg,
   consultingImg,
@@ -9,13 +7,13 @@ import {
   propertyImg,
 } from "./assets/images";
 import ExperienceShowcase from "./components/ExperienceShowcase";
-const Projects = React.lazy(() => import("./components/Projects"));
-const ClientStories = React.lazy(() => import("./components/ClientStories"));
-const InnovatingSpaces = React.lazy(() =>
-  import("./components/InnovatingSpaces")
-);
-const Contact = React.lazy(() => import("./components/contact"));
-const Footer = React.lazy(() => import("./components/Footer"));
+import Contact from "./components/contact";
+import Projects from "./components/Projects";
+import ClientStories from "./components/ClientStories";
+import InnovatingSpaces from "./components/InnovatingSpaces";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
+import HeadBanner from "./components/HeadBanner";
 
 function App() {
   const [activeHash, setActiveHash] = useState(window.location.hash);

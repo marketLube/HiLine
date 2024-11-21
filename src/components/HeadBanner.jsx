@@ -284,13 +284,13 @@ const HeadBanner = () => {
               href="whatsapp://send?phone=+9633747727"
               target="_blank"
               className="[&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
-              onclick="if (!window.open('whatsapp://send?phone=+9633747727', '_blank')) window.location.href='https://wa.me/9633747727';"
+     
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   fillRule="evenodd"
