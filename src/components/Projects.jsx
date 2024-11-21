@@ -141,7 +141,7 @@ const Projects = () => {
                   } group-hover:scale-105`}
                 />
 
-                <p className="absolute inset-0 flex items-center justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-3xl">
                   {testimonial.name}
                 </p>
 

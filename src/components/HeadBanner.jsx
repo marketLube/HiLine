@@ -18,8 +18,23 @@ const HeadBanner = () => {
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
   const imageArray = ["../assets/1hilinetop-01.webp"];
+
+  const [isMobileView, setIsMobileView] = useState(false);
+
   //   project1Img, project2Img, project3Img
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize); // Cleanup
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const nextImage = () => {
@@ -46,12 +61,13 @@ const HeadBanner = () => {
         }}
       >
         <Parallax
-          speed={-20}
+          speed={isMobileView ? 0 : -20}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
           style={{
             backgroundImage: `url("./1hilinetop-01.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
+            backgroundPosition: "center -60px",
           }}
         ></Parallax>
 
@@ -79,7 +95,7 @@ const HeadBanner = () => {
             </h1>
           </div>
         </div>
-        <Parallax speed={25}>
+        <Parallax speed={isMobileView ? 0 : 22}>
           <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28">
             <div className="flex flex-col">
               <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
@@ -249,7 +265,7 @@ const HeadBanner = () => {
         </section>
 
         {/* media links */}
-        <div className="relative md:w-32 hidden md:flex justify-center items-center h-16">
+        <div className="relative md:w-32 hidden md:flex justify-center items-center h-16 ">
           <div className="absolute z-10 flex justify-center">
             {/* facebook */}
             <a
@@ -284,7 +300,6 @@ const HeadBanner = () => {
               href="whatsapp://send?phone=+9633747727"
               target="_blank"
               className="[&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
-     
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

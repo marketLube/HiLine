@@ -46,7 +46,7 @@ function App() {
           </section>
         }
       >
-        <div className="bg-[#1A1A1A] p-3 md:p-5 lg:p-7">
+        <div className="bg-[#1A1A1A] p-3 md:p-5 lg:p-4">
           <div
             id="/"
             className={`${activeHash === "/" ? "text-gray-800 bg-white" : ""}`}
@@ -74,7 +74,7 @@ function App() {
                 title="CONSULTING"
                 description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
                 parentClassName="mt-0"
-                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+                curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
               />
             </div>
 
@@ -84,7 +84,7 @@ function App() {
                 title="CONSULTING"
                 description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
                 parentClassName="mt-0"
-                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+                curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
               />
             </div>
             <div className="sticky top-0 h-screen flex flex-col items-center justify-center ">
@@ -93,7 +93,7 @@ function App() {
                 title="INTERIOR DESIGN"
                 description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
                 parentClassName="mt-0"
-                curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
+                curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
               />
             </div>
             <div className="sticky top-0 h-screen flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">

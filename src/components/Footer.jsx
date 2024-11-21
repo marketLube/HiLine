@@ -29,7 +29,7 @@ const Footer = () => {
                 <div key={href} className="mb-4">
                   <a
                     href={href}
-                    className={`w-full block  px-4 py-1 font-thin text-sm ${
+                    className={`w-full block  px-4 py-1 font-medium text-lg ${
                       window.location.hash === href
                         ? "text-gray-800 bg-white rounded-lg"
                         : "hover:text-gray-400"
@@ -45,19 +45,19 @@ const Footer = () => {
             <div className="lg:space-y-11 xl:space-y-12 md:text-lg lg:text-xl xl:text-2xl font-thin">
               <div className="mb-4 flex justify-center md:justify-start ">
                 <div>
-                  <p className="w-52 md:w-72 font-thin text-sm">
+                  <p className="w-52 md:w-72 font-thin text-lg">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                     sed diam nonummy nibh euismod tincidunt ut{" "}
                   </p>
                 </div>
               </div>
               <div className="mb-4 flex items-center justify-start">
-                <a href="mailto:hello@hiline.com font-thin text-sm">
+                <a href="mailto:hello@hiline.com font-thin text-lg">
                   hello@hiline.com
                 </a>
               </div>
 
-              <div className="mb-4 flex items-center justify-start font-thin text-sm">
+              <div className="mb-4 flex items-center justify-start font-thin text-lg">
                 +91 9526457322
               </div>
 
