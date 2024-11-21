@@ -98,7 +98,7 @@ function App() {
                 curveClassName="rounded-t-3xl md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem]"
               />
             </div>
-            <div className="sticky top-0 h-screen flex flex-col items-center justify-center bg-white rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
+            <div className="sticky top-0 h-screen flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
               <Services
                 backgroundImage={propertyImg}
                 title="PROPERTY MANAGEMENT"

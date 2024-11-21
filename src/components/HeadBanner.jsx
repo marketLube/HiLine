@@ -10,12 +10,14 @@ import { GrFormNextLink } from "react-icons/gr";
 import LogoHiline from "./LogoHiline";
 import { Parallax, useParallax } from "react-scroll-parallax";
 
+const mainBg = "../assets/1hilinetop-01.webp";
+
 const HeadBanner = () => {
   const instagram =
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
-  const imageArray = [image1];
+  const imageArray = ["../assets/1hilinetop-01.webp"];
   //   project1Img, project2Img, project3Img
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,12 +46,12 @@ const HeadBanner = () => {
         }}
       >
         <Parallax
-          speed={-50}
+          speed={-20}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
           style={{
-            backgroundImage: `url(${imageArray[currentImageIndex]})`,
-            backgroundSize: "100%", // Ensures the entire image is visible
-            backgroundRepeat: "no-repeat", // Prevents tiling of the image
+            backgroundImage: `url("./1hilinetop-01.webp")`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
           }}
         ></Parallax>
 
