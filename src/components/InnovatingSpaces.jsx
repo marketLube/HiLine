@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { innovatingSpace1Img, innovatingSpace2Img } from "../assets/images";
+import LazyLoad from "react-lazy-load";
 
 const InnovatingSpaces = () => {
   const [sliderPosition, setSliderPosition] = useState(65);
@@ -40,22 +41,26 @@ const InnovatingSpaces = () => {
       }}
     >
       {/* First Image */}
-      <div
-        className="absolute inset-0 h-full w-full bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${innovatingSpace1Img})`,
-          clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
-        }}
-      ></div>
+      <LazyLoad>
+        <div
+          className="absolute inset-0 h-full w-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${innovatingSpace1Img})`,
+            clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
+          }}
+        ></div>
+      </LazyLoad>
 
       {/* Second Image */}
-      <div
-        className="absolute inset-0 h-full w-full bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${innovatingSpace2Img})`,
-          clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
-        }}
-      ></div>
+      <LazyLoad>
+        <div
+          className="absolute inset-0 h-full w-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${innovatingSpace2Img})`,
+            clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
+          }}
+        ></div>
+      </LazyLoad>
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex items-end justify-start p-9 md:p-16 xl:p-28 pointer-events-none">

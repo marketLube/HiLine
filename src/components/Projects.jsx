@@ -1,3 +1,4 @@
+import LazyLoad from "react-lazy-load";
 import {
   project1Img,
   project2Img,
@@ -104,12 +105,13 @@ const testimonials = [
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 ];
+const arr = [4, 6, 7, 8, 9, 11];
 
 const Projects = () => {
   return (
     <section
       id="testimonies"
-      className="pt-10 md:pt-14 lg:pt-20 pb-11 bg-white"
+      className="pt-10 md:pt-14 lg:pt-20 pb-11 bg-white projectsection"
     >
       <div className="max-w-full md:px-10 lg:px-16 xl:px-32">
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
@@ -133,13 +135,15 @@ const Projects = () => {
               }`}
             >
               <div className="relative">
-                <img
-                  src={testimonial.img}
-                  alt={testimonial.name}
-                  className={`transition-transform duration-300 ${
-                    testimonial.className || ""
-                  } group-hover:scale-105 rounded-3xl`}
-                />
+                <LazyLoad>
+                  <img
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className={`transition-transform duration-300 ${
+                      testimonial.className || ""
+                    } group-hover:scale-105 rounded-3xl`}
+                  />
+                </LazyLoad>
 
                 <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-3xl transition-transform group-hover:scale-105 ">
                   {testimonial.name}

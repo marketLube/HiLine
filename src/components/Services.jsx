@@ -10,7 +10,7 @@ const Services = ({
   return (
     <section
       id="hero"
-      className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem] mt-[-4rem] ${curveClassName}${parentClassName}`}
+      className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem]  servicesection ${curveClassName}${parentClassName}`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}

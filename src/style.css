@@ -1,0 +1,103 @@
+/* Small devices (Mobile) */
+@media (max-width: 640px) {
+  .homehead {
+    margin-top: 0.5rem;
+  }
+  .welovelive {
+    margin-top: -1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .leftwe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .righthiline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .craft,
+  .story,
+  .we {
+    font-size: 18px;
+  }
+  .hiline,
+  .succes,
+  .dedicate {
+    font-size: 10px;
+  }
+  .homebg {
+    background-size: 200% !important;
+    background-position: center 0px !important;
+  }
+  .yearoftrans {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .parentofyear {
+    width: 15rem;
+  }
+  .ten {
+    font-size: 2rem;
+  }
+  .creating,
+  .years {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .whitesection {
+    display: flex !important;
+    flex-direction: column !important ;
+    padding-top: 2rem;
+  }
+  .gridsection {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 3rem !important;
+    padding-top: 2rem !important;
+  }
+  .numberhead {
+    font-size: 14px;
+  }
+  .servicesection {
+    margin-top: 3rem;
+  }
+  .projectsection {
+    margin-top: 0.5rem;
+  }
+  .servicecomp {
+    background-color: white;
+  }
+
+  .lazyimg {
+    height: 80%;
+  }
+  .project-img {
+    height: 20rem;
+  }
+}
+
+/* Medium devices (Tablet) */
+@media (max-width: 768px) {
+}
+
+/* Large devices (Laptop/ Desktop) */
+@media (max-width: 1024px) {
+}
+
+/* Extra large devices (Large Desktop) */
+@media (max-width: 1280px) {
+}
+
+/* 2x extra large devices (Extra Large Desktop) */
+@media (max-width: 1536px) {
+}

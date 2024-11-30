@@ -7,57 +7,57 @@ const ExperienceShowcase = () => {
   return (
     <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16">
       <div className="relative container mx-auto text-center z-10">
-        <div className="w-full flex items-center justify-center md:px-12">
-          <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center">
-            <h1 className="md:text-5xl lg:text-7xl xl:text-8xl font-semibold leading-none">
-              10
+        <div className="w-full flex items-center justify-center md:px-12 whitesection">
+          <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center yearoftrans">
+            <h1 className="md:text-5xl lg:text-7xl xl:text-8xl font-semibold leading-none ten">
+              10+
             </h1>
-            <div className="md:ml-2 lg:ml-4 flex flex-col justify-center h-full">
-              <p className="lg:text-xl xl:text-2xl leading-tight">
+            <div className="md:ml-2 lg:ml-4 flex flex-col justify-center h-full parentofyear">
+              <p className="lg:text-xl xl:text-2xl leading-tight years">
                 years of transforming places and
               </p>
-              <p className="lg:text-xl xl:text-2xl leading-tight">
+              <p className="lg:text-xl xl:text-2xl leading-tight creating">
                 creating plans that improve life
               </p>
             </div>
           </div>
 
-          <div className="md:w-1/2 grid grid-cols-4 md:grid-cols-2 grid-rows-2 xl:gap-4 p-4">
+          <div className="md:w-1/2 grid grid-cols-4 md:grid-cols-2 grid-rows-2 xl:gap-4 p-4 gridsection">
             <div className="flex flex-col items-center md:mb-5">
-              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none">
+              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
                 12
               </h1>
-              <span className="text-[9px] text-black md:text-sm lg:text-base">
+              <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Certified Engineers
               </span>
             </div>
             <div className="flex flex-col items-center">
-              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none">
+              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
                 180+
               </h1>
-              <span className="text-[9px] text-black md:text-sm lg:text-base">
+              <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Happy Clients
               </span>
             </div>
             <div className="flex flex-col items-center md:mt-5">
-              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none">
+              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
                 8+
               </h1>
-              <span className="text-[9px] text-black md:text-sm lg:text-base">
+              <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Cities
               </span>
             </div>
             <div className="flex flex-col items-center md:mt-5">
-              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none">
+              <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
                 250
               </h1>
-              <span className="text-[9px] text-black md:text-sm lg:text-base">
+              <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Project Done
               </span>
             </div>
           </div>
         </div>
-        <div className=" md:hidden -mt-8 pb-6 flex justify-center items-center">
+        {/* <div className=" md:hidden -mt-8 pb-6 flex justify-center items-center">
           <h1 className="font-semibold text-5xl leading-none">10</h1>
           <div className="ml-2 flex flex-col justify-center">
             <p className="text-sm lg:text-xl xl:text-2xl leading-tight">
@@ -67,7 +67,7 @@ const ExperienceShowcase = () => {
               creating plans that improve life
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="border border-gray-300"></div>
         <div className="w-full px-5 md:px-10 lg:px-16 xl:px-24 grid grid-cols-3 gap-4 h-44 md:h-56 lg:h-64 xl:h-80">
           <div className="flex flex-col justify-center items-center">

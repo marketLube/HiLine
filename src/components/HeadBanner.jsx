@@ -63,7 +63,7 @@ const HeadBanner = () => {
       >
         <Parallax
           speed={isMobileView ? 0 : -20}
-          className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
+          className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top homebg"
           style={{
             backgroundImage: `url("./1hilinetop-01.webp")`,
             backgroundSize: "100%",
@@ -74,7 +74,7 @@ const HeadBanner = () => {
 
         <div className="absolute inset-0 bg-black bg-opacity-5 rounded-t-[3.5rem]"></div>
 
-        <div className="relative py-20 md:py-32 lg:py-40 xl:py-44 z-10 text-center ">
+        <div className="relative py-20 md:py-32 lg:py-40 xl:py-44 z-10 text-center homehead ">
           <div className="flex flex-col -space-y-5 md:-space-y-0 mb-2 md:mb-8 lg:mb-12 xl:mb-14">
             <span className="text-white font-sans text-4xl md:text-6xl font-normal lg:text-[4.5rem] xl:text-[6rem]">
               YOUR
@@ -96,35 +96,36 @@ const HeadBanner = () => {
             </h1>
           </div>
         </div>
+
         <Parallax speed={isMobileView ? 0 : 22}>
-          <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28">
-            <div className="flex flex-col">
-              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+          <div className="relative mt-16 md:mt-16 xl:mt-36 pb-14 md:pb-24 lg:pb-32 xl:pb-44 z-10 flex justify-between px-1.5 md:px-8 lf:px-10 xl:px-28 welovelive">
+            <div className="flex flex-col leftwe">
+              <span className="text-white font-semibold text-lg md:text-sm lg:text-4xl xl:text-5xl leading-tight we">
                 We love & live
               </span>
 
-              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+              <span className="text-white font-semibold text-lg md:text-3xl lg:text-4xl xl:text-5xl leading-tight craft">
                 craftsmanship
               </span>
 
-              <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2">
+              <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2 story">
                 Our Story
                 <GrFormNextLink className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
               </span>
             </div>
-            <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col ">
-              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+            <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col righthiline">
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug hiline">
                 Hiline Construction has been a trusted name in the construction
                 industry for <br className="hidden xl:block" /> over 10 years.
               </span>
-              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug succes">
                 We have successfully completed 250+{" "}
                 <br className="hidden xl:block" /> projects, focusing on
                 residential and <br className="hidden xl:block" /> commercial
                 spaces with precision and <br className="hidden xl:block" />
                 quality.
               </span>
-              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug">
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug dedicate">
                 Our dedicated team ensures every{" "}
                 <br className="hidden xl:block" /> project is completed to the
                 highest <br className="hidden xl:block" /> standards, delivering

@@ -6,16 +6,17 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { image1 } from "../assets/images";
+import { image1, project1Img } from "../assets/images";
+import LazyLoad from "react-lazy-load";
 
 const ClientStories = () => {
   const images = [
-    { id: 1, src: image1, alt: "Image 1" },
-    { id: 2, src: image1, alt: "Image 2" },
-    { id: 3, src: image1, alt: "Image 3" },
-    { id: 4, src: image1, alt: "Image 4" },
-    { id: 5, src: image1, alt: "Image 5" },
-    { id: 6, src: image1, alt: "Image 6" },
+    { id: 1, src: project1Img, alt: "Image 1" },
+    { id: 2, src: project1Img, alt: "Image 2" },
+    { id: 3, src: project1Img, alt: "Image 3" },
+    { id: 4, src: project1Img, alt: "Image 4" },
+    { id: 5, src: project1Img, alt: "Image 5" },
+    { id: 6, src: project1Img, alt: "Image 6" },
   ];
 
   return (
@@ -41,12 +42,12 @@ const ClientStories = () => {
           navigation={true}
           breakpoints={{
             375: {
-              slidesPerView: 2,
-              spaceBetween: 10,
+              slidesPerView: 1.2,
+              spaceBetween: 16,
             },
             768: {
-              slidesPerView: 3,
-              spaceBetween: 20,
+              slidesPerView: 1.2,
+              spaceBetween: 26,
             },
             1024: {
               slidesPerView: 3,
@@ -61,11 +62,13 @@ const ClientStories = () => {
         >
           {images.map((image) => (
             <SwiperSlide key={image.id} className="flex justify-center">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
-              />
+              <LazyLoad height={600} className="lazy">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
+                />
+              </LazyLoad>
             </SwiperSlide>
           ))}
         </Swiper>
