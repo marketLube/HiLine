@@ -138,14 +138,14 @@ const Projects = () => {
                   alt={testimonial.name}
                   className={`transition-transform duration-300 ${
                     testimonial.className || ""
-                  } group-hover:scale-105`}
+                  } group-hover:scale-105 rounded-3xl`}
                 />
 
-                <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-3xl">
+                <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-3xl transition-transform group-hover:scale-105 ">
                   {testimonial.name}
                 </p>
 
-                <div className="absolute top-0 left-0 h-full w-1/3 bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-0 left-0 h-full w-1/3 bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105">
                   <h3 className="text-lg font-semibold">
                     {testimonial.details}
                   </h3>
