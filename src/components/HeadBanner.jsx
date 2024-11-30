@@ -51,7 +51,8 @@ const HeadBanner = () => {
 
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const preloadImage = new Image();
+  preloadImage.src = "./1hilinetop-01.webp";
   return (
     <div className="relative">
       <section
