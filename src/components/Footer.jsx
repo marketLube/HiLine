@@ -8,10 +8,10 @@ const Footer = () => {
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
   return (
     <div className="absolute bottom-0 -z-0 w-full">
-      <footer className="bg-[#1A1A1A] xl:h-3/4 text-gray-200 flex justify-between">
+      <footer className="bg-[#1A1A1A] xl:h-3/4 text-gray-200 flex justify-between p-5 md:p-8 lg:p-0">
         <div className="flex flex-col w-full">
-          <div className="flex">
-            <div className="w-1/3 md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
+          <div className="flex flex-col md:flex-row pb-0 md:pb-12 lg:pb-0 ">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
               <div className="w-24 md:w-64 xl:w-96">
                 <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm">
                   <LogoHiline />
@@ -27,7 +27,7 @@ const Footer = () => {
                   { href: "#testimonial", label: "Testimonial" },
                   { href: "#contact", label: "Contact" },
                 ].map(({ href, label }) => (
-                  <div key={href} className="mb-4">
+                  <div key={href} className="mb-2 lg:mb-4">
                     <a
                       href={href}
                       className={`w-full block  px-4 py-1 font-medium text-lg ${
@@ -42,23 +42,23 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="w-1/2 flex justify-center items-center flex-col py-8 md:py-16 xl:py-28 px-10">
-              <div className="lg:space-y-11 xl:space-y-12 md:text-lg lg:text-xl xl:text-2xl font-thin">
+            <div className="w-full md:w-1/2 flex justify-center items-center flex-col pb-8 md:pb-0 lg:py-16 xl:py-28 px-10">
+              <div className="lg:space-y-8 xl:space-y-12 text-sm md:text-lg font-thin">
                 <div className="mb-4 flex justify-center md:justify-start ">
                   <div>
-                    <p className="w-52 md:w-72 font-thin text-lg">
+                    <p className="w-52 md:w-72 font-thin ">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                       sed diam nonummy nibh euismod tincidunt ut{" "}
                     </p>
                   </div>
                 </div>
                 <div className="mb-4 flex items-center justify-start">
-                  <a href="mailto:hello@hiline.com font-thin text-lg">
+                  <a href="mailto:hello@hiline.com font-thin ">
                     hello@hiline.com
                   </a>
                 </div>
 
-                <div className="mb-4 flex items-center justify-start font-thin text-lg">
+                <div className="mb-4 flex items-center justify-start font-thin ">
                   +91 9526457322
                 </div>
 
