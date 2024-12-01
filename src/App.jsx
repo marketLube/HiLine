@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#ffffff] p-3 md:p-5 lg:p-4">
+      <div className="bg-[#ffffff] px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-4">
         <div
           id="/"
           className={`${activeHash === "/" ? "text-gray-800 bg-white" : ""}`}
@@ -112,15 +112,21 @@ function App() {
           <ClientStories />
         </div>
         <InnovatingSpaces />
-        <div
-          id="contact"
-          className={`${
-            activeHash === "#contact" ? "text-gray-800 bg-white" : ""
-          }`}
-        >
-          <Contact />
+        <div className="relative">
+          <div
+            id="contact"
+            className={`sticky bottom-0 h-screen flex flex-col items-center justify-center z-10 ${
+              activeHash === "#contact" ? "text-gray-800 bg-white" : ""
+            }`}
+          > 
+            <Contact />
+          </div>
+
+          <div className="h-screen bg-transparent"></div>
+          <div className="sticky bottom-0 h-screen flex flex-col items-center justify-center">
+            <Footer />
+          </div>
         </div>
-        <div className="h-screen project-img bg-transparent"></div>
       </div>
     </>
   );

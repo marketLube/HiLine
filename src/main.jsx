@@ -11,7 +11,6 @@ createRoot(document.getElementById("root")).render(
     <ParallaxProvider>
       <div className="relative">
         <App />
-        <Footer />
       </div>
     </ParallaxProvider>
   </StrictMode>

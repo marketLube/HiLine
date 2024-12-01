@@ -7,18 +7,18 @@ const Footer = () => {
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
   return (
-    <div className="absolute bottom-0 -z-0">
+    <div className="absolute bottom-0 -z-0 w-full">
       <footer className="bg-[#1A1A1A] xl:h-3/4 text-gray-200 flex justify-between">
         <div className="flex flex-col w-full">
           <div className="flex">
-            <div className="w-1/2 flex justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
+            <div className="w-1/3 md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
               <div className="w-24 md:w-64 xl:w-96">
                 <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm">
                   <LogoHiline />
                 </div>
               </div>
 
-              <div className="hidden lg:block lg:text-xl xl:text-2xl lg:space-y-4 xl:space-y-7">
+              <div className="hidden md:block lg:text-xl xl:text-2xl lg:space-y-4 xl:space-y-7">
                 {[
                   { href: "#home", label: "Home" },
                   { href: "#about", label: "About" },

@@ -21,7 +21,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project2Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -29,7 +29,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project1Img,
     className:
-      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -37,7 +37,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project3Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -53,7 +53,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project3Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 
   {
@@ -62,7 +62,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project1Img,
     className:
-      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -70,7 +70,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project2Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -86,7 +86,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project3Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -94,7 +94,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project4Img,
     className:
-      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
@@ -102,7 +102,7 @@ const testimonials = [
     location: "Moovattupuzha",
     img: project3Img,
     className:
-      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 ];
 const arr = [4, 6, 7, 8, 9, 11];

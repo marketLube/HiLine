@@ -24,7 +24,7 @@ const InnovatingSpaces = () => {
 
   return (
     <div
-      className="relative flex w-full h-80 md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden"
+      className="relative flex w-full h-72 md:h-[28rem] lg:h-[33rem] xl:h-screen overflow-hidden"
       onMouseMove={(e) => {
         handleSliderMove(e);
         handlePointerMove(e);
