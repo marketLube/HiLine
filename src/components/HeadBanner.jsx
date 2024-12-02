@@ -87,7 +87,7 @@ const HeadBanner = () => {
               PLACE
             </span>
           </div>
-          <div className="pb-28 md:pb-36 lg:pb-52 xl:pb-60 -space-y-8">
+          <div className="pb-28 md:pb-36 lg:pb-52 xl:pb-60 -space-y-8 bring">
             <h1 className="text-white text-sm md:text-lg font-light mb-7 lg:text-xl xl:text-2xl leading-snug">
               Bringing your vision to life with quality,
             </h1>
@@ -114,22 +114,17 @@ const HeadBanner = () => {
               </span>
             </div>
             <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col righthiline">
-              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug hiline">
+              <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug hiline ">
                 Hiline Construction has been a trusted name in the construction
-                industry for <br className="hidden xl:block" /> over 10 years.
+                industry for over 10 years.
               </span>
               <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug succes">
-                We have successfully completed 250+{" "}
-                <br className="hidden xl:block" /> projects, focusing on
-                residential and <br className="hidden xl:block" /> commercial
-                spaces with precision and <br className="hidden xl:block" />
-                quality.
+                We have successfully completed 250+ projects, focusing on
+                residential and commercial spaces with precision and quality.
               </span>
               <span className="text-white text-xs md:text-lg font-light mb-3 md:mb-7 lg:text-xl xl:text-[28px] leading-snug dedicate">
-                Our dedicated team ensures every{" "}
-                <br className="hidden xl:block" /> project is completed to the
-                highest <br className="hidden xl:block" /> standards, delivering
-                lasting results.
+                Our dedicated team ensures every project is completed to the
+                highest standards, delivering lasting results.
               </span>
             </div>
           </div>

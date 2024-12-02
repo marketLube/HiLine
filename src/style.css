@@ -1,10 +1,15 @@
 /* Small devices (Mobile) */
 @media (max-width: 640px) {
   .homehead {
-    margin-top: 0.5rem;
+    margin-top: 2rem;
   }
+  .bring {
+    margin-top: 2rem;
+    line-height: 5px;
+  }
+
   .welovelive {
-    margin-top: -1rem;
+    margin-top: 8.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -15,25 +20,37 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -5rem;
   }
   .righthiline {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
   }
   .craft,
-  .story,
   .we {
     font-size: 18px;
   }
-  .hiline,
+  .story {
+    font-size: 14px;
+  }
+  .hiline {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .succes,
   .dedicate {
-    font-size: 10px;
+    display: none;
   }
+
   .homebg {
-    background-size: 200% !important;
+    background-size: 250% !important;
     background-position: center 0px !important;
   }
   .yearoftrans {
@@ -69,7 +86,7 @@
     font-size: 14px;
   }
   .servicesection {
-    margin-top: 3rem;
+    height: 60rem !important;
   }
   .projectsection {
     margin-top: 0.5rem;
@@ -83,6 +100,37 @@
   }
   .project-img {
     height: 20rem;
+  }
+  .projectsdetails {
+    font-size: 12px;
+    width: 8rem;
+  }
+
+  .projectheight {
+    line-height: 5px;
+  }
+  .contactdetail {
+    position: static;
+    height: 12rem;
+    margin: 0;
+    z-index: 1000;
+  }
+  .contact {
+    position: static;
+    z-index: 1000;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  .foot {
+    position: static;
+    margin: 0;
+    height: 19rem;
+  }
+  .foot-content {
+    padding-top: 2rem;
+  }
+  .footerdetails {
+    padding-top: 2rem;
   }
 }
 
@@ -100,4 +148,8 @@
 
 /* 2x extra large devices (Extra Large Desktop) */
 @media (max-width: 1536px) {
+}
+
+.servicesection {
+  border-radius: 2rem;
 }

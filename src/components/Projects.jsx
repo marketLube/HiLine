@@ -149,11 +149,13 @@ const Projects = () => {
                   {testimonial.name}
                 </p>
 
-                <div className="absolute top-0 left-0 h-full w-1/3 bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105">
-                  <h3 className="text-lg font-semibold">
+                <div className="absolute top-0 left-0 h-full w-1/3 bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105 projectheight ">
+                  <h3 className="text-lg font-semibold projectsdetails">
                     {testimonial.details}
                   </h3>
-                  <p className="mt-2 text-sm">{testimonial.location}</p>
+                  <p className="mt-2 text-sm projectsdetails">
+                    {testimonial.location}
+                  </p>
                 </div>
               </div>
             </div>

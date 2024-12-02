@@ -115,15 +115,15 @@ function App() {
         <div className="relative">
           <div
             id="contact"
-            className={`sticky bottom-0 h-screen flex flex-col items-center justify-center z-10 ${
+            className={`sticky bottom-0 h-screen flex flex-col items-center justify-center z-10 contactdetail contact-body ${
               activeHash === "#contact" ? "text-gray-800 bg-white" : ""
             }`}
-          > 
+          >
             <Contact />
           </div>
 
-          <div className="h-screen bg-transparent"></div>
-          <div className="sticky bottom-0 h-screen flex flex-col items-center justify-center">
+          {/* <div className="h-screen bg-transparent"></div> */}
+          <div className="sticky bottom-0 h-[35rem] flex flex-col items-center justify-center foot">
             <Footer />
           </div>
         </div>
