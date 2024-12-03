@@ -42,28 +42,28 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center items-center flex-col pb-8 md:pb-0 lg:py-16 xl:py-28 px-10">
+            <div className="w-full md:w-1/2 flex justify-center items-center flex-col pb-8 md:pb-0 lg:py-16 xl:py-28 px-10 footerleftside">
               <div className="lg:space-y-8 xl:space-y-12 text-sm md:text-lg font-thin">
                 <div className="mb-4 flex justify-center md:justify-start ">
                   <div>
-                    <p className="w-52 md:w-72 font-thin ">
+                    <p className="w-52 md:w-65 font-thin footerlorem">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                       sed diam nonummy nibh euismod tincidunt ut{" "}
                     </p>
                   </div>
                 </div>
                 <div className="mb-4 flex items-center justify-start">
-                  <a href="mailto:hello@hiline.com font-thin ">
+                  <a href="mailto:hello@hiline.com font-thin footermail">
                     hello@hiline.com
                   </a>
                 </div>
 
-                <div className="mb-4 flex items-center justify-start font-thin ">
+                <div className="mb-4 flex items-center justify-start font-thin footermail">
                   +91 9526457322
                 </div>
 
                 <div className="flex items-center justify-start ">
-                  <div className="flex justify-center">
+                  <div className="flex justify-center footersocial">
                     {/* facebook */}
                     <a
                       href={facebook}
@@ -117,9 +117,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center">
+          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center market">
             <span>made by </span>
-            <a className=" underline" href="#">
+            <a className=" underline " href="#">
               Marketlube
             </a>
           </div>

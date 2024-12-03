@@ -153,7 +153,7 @@ const Projects = () => {
                   <h3 className="text-lg font-semibold projectsdetails">
                     {testimonial.details}
                   </h3>
-                  <p className="mt-2 text-sm projectsdetails">
+                  <p className="mt-2 text-sm projectheight">
                     {testimonial.location}
                   </p>
                 </div>
