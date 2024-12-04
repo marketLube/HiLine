@@ -117,7 +117,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center market absolute bottom-10 left-[50%] -translate-x-[50%]">
+          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center market absolute bottom-10 left-[50%] -translate-x-[50%] madeby">
             <span>made by </span>
             <a className=" underline " href="#">
               Marketlube

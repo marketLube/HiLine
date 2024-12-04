@@ -176,6 +176,9 @@
   .project-bg {
     border-radius: 1.5rem;
   }
+  .madeby {
+    bottom: 0;
+  }
 }
 
 /* Medium devices (Tablet) */
