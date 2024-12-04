@@ -113,7 +113,7 @@
   }
   .contactdetail {
     position: static;
-    height: 11rem;
+    /* height: 11rem; */
     margin: 0;
     z-index: 1000;
   }

@@ -79,17 +79,6 @@ const ExperienceShowcase = () => {
             </div>
           </div>
         </div>
-        {/* <div className=" md:hidden -mt-8 pb-6 flex justify-center items-center">
-          <h1 className="font-semibold text-5xl leading-none">10</h1>
-          <div className="ml-2 flex flex-col justify-center">
-            <p className="text-sm lg:text-xl xl:text-2xl leading-tight">
-              years of transforming places and
-            </p>
-            <p className="text-sm lg:text-xl xl:text-2xl leading-tight">
-              creating plans that improve life
-            </p>
-          </div>
-        </div> */}
         <div className="border border-gray-300"></div>
         <div className="w-full px-5 md:px-10 lg:px-16 xl:px-24 grid grid-cols-3 gap-4 h-44 md:h-56 lg:h-64 xl:h-80">
           <div className="flex flex-col justify-center items-center">
@@ -126,6 +115,7 @@ const ExperienceShowcase = () => {
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+            render={true}
           />
         </div>
 
@@ -156,6 +146,9 @@ const ExperienceShowcase = () => {
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
           />
         </div>
+        <button className="absolute top-56 md:top-[27rem] lg:top-[25rem] xl:top-[38rem] right-6 md:right-16 lg:right-28 xl:right-32 text-black text-xs md:text-sm lg:text-xl xl:text-2xl flex items-center bg-white rounded-3xl px-3 xl:px-7 py-1 xl:py-4 -z-50">
+          <span className="uppercase ">WHAT WE DO</span>
+        </button>
       </div>
     </div>
   );
