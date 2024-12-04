@@ -87,6 +87,10 @@
   }
   .servicesection {
     height: 80rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .proj-bg {
+    border-radius: 1.5rem !important;
   }
   .projectsection {
     margin-top: -1rem;

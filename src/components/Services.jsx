@@ -11,13 +11,16 @@ const Services = ({
   return (
     <section
       id="hero"
-      className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem]  servicesection `}
+      className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem]  servicesection xl:rounded-[8rem]`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
+        overflow: "hidden",
+        borderRadius: "8rem",
       }}
     >
       <div
-        className={`absolute inset-0 bg-black bg-opacity-5 ${curveClassName}`}
+        style={{ borderRadius: "8rem" }}
+        className={`absolute inset-0 bg-black bg-opacity-5 xl:rounded-[8rem]  ${curveClassName} proj-bg`}
       ></div>
 
       <div className="relative z-10 p-7 md:p-16 lg:p-24 xl:p-36">

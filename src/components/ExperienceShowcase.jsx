@@ -113,7 +113,7 @@ const ExperienceShowcase = () => {
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
-            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem] overflow-hidden"
           />
         </div>
 
@@ -123,7 +123,7 @@ const ExperienceShowcase = () => {
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
-            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem] overflow-hidden"
           />
           {/* <button className="absolute top-56 md:top-[27rem] lg:top-[25rem] right-6 md:right-16 lg:right-28 xl:right-32 text-black text-xs md:text-sm lg:text-xl xl:text-2xl flex items-center bg-black rounded-3xl px-3 xl:px-7 py-1 xl:py-4 z-150">
             <span className="uppercase ">WHAT WE DO</span>
@@ -135,7 +135,7 @@ const ExperienceShowcase = () => {
             title="INTERIOR DESIGN"
             description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
             parentClassName="mt-0"
-            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem] overflow-hidden"
           />
         </div>
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
@@ -144,7 +144,7 @@ const ExperienceShowcase = () => {
             title="PROPERTY MANAGEMENT"
             description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
             parentClassName="mt-0"
-            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem] overflow-hidden"
           />
         </div>
       </div>
