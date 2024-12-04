@@ -132,7 +132,7 @@ const HeadBanner = () => {
       </section>
 
       {/* Header Section */}
-      <div className="absolute top-2 md:top-4 lg:top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14">
+      <div className="absolute top-2 md:top-4 lg:top-6 left-0 right-0 flex justify-between items-center md:mt-0 px-5 md:px-14 nav">
         {/* Mobile Menu Toggle */}
         <div className="relative flex justify-between items-center lg:hidden mt-2 w-full md:w-7/12">
           <div className="hidden md:flex justify-center">
@@ -235,7 +235,7 @@ const HeadBanner = () => {
             top: "5rem",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            zIndex: 1000000,
+            zIndex: 900000000000,
           }}
         >
           <div className="absolute z-10 lg:space-x-2 xl:space-x-5 font-sans flex">
