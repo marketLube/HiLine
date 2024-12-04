@@ -54,7 +54,7 @@ const HeadBanner = () => {
   const preloadImage = new Image();
   preloadImage.src = "./1hilinetop-01.webp";
   return (
-    <div className="relative">
+    <div className="relative bg-black pt-6 pl-6 pr-6 headbanner">
       <section
         className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top "
         style={{

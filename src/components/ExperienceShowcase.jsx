@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaRegClock } from "react-icons/fa";
 
+import {
+  constructionImg,
+  consultingImg,
+  interiorImg,
+  propertyImg,
+} from "../assets/images";
+import Services from "./Services";
+
 const ExperienceShowcase = () => {
+  const [activeHash, setActiveHash] = useState(window.location.hash);
+
+  // Initialize AOS animation on component mount
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
   return (
-    <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16">
+    <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16 ">
       <div className="relative container mx-auto text-center z-10">
         <div className="w-full flex items-center justify-center md:px-12 whitesection">
           <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center yearoftrans">
@@ -88,6 +110,51 @@ const ExperienceShowcase = () => {
               Premium Material
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="relative servicecomp">
+        <div
+          id="service"
+          className={`sticky top-0 h-screen project-img flex flex-col items-center justify-center  ${
+            activeHash === "#service" ? "text-gray-800 bg-white" : ""
+          }`}
+        >
+          <Services
+            backgroundImage={constructionImg}
+            title="CONSULTING"
+            description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+            parentClassName="mt-0"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+          />
+        </div>
+
+        <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
+          <Services
+            backgroundImage={consultingImg}
+            title="CONSULTING"
+            description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+            parentClassName="mt-0"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+          />
+        </div>
+        <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
+          <Services
+            backgroundImage={interiorImg}
+            title="INTERIOR DESIGN"
+            description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
+            parentClassName="mt-0"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+          />
+        </div>
+        <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
+          <Services
+            backgroundImage={propertyImg}
+            title="PROPERTY MANAGEMENT"
+            description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
+            parentClassName="mt-0"
+            curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
+          />
         </div>
       </div>
     </div>

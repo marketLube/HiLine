@@ -89,7 +89,7 @@
     height: 80rem !important;
   }
   .projectsection {
-    margin-top: 0.5rem;
+    margin-top: -1rem;
   }
   .servicecomp {
     background-color: white;
@@ -109,6 +109,7 @@
   .projectheight {
     line-height: 0.1rem;
     font-size: 11px;
+    border-radius: 5rem;
   }
   .contactdetail {
     position: static;
@@ -166,6 +167,11 @@
   }
   .market {
     font-size: 13px;
+  }
+  .headbanner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
   }
 }
 

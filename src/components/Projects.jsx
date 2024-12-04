@@ -59,7 +59,7 @@ const testimonials = [
   {
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
+    location: "Thodupuzha",
     img: project1Img,
     className:
       "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
@@ -134,14 +134,14 @@ const Projects = () => {
                   : ""
               }`}
             >
-              <div className="relative">
+              <div className="relative group overflow-hidden rounded-3xl">
                 <LazyLoad>
                   <img
                     src={testimonial.img}
                     alt={testimonial.name}
-                    className={`transition-transform duration-300 ${
+                    className={`transition-transform duration-300   ${
                       testimonial.className || ""
-                    } group-hover:scale-105 rounded-3xl`}
+                    } group-hover:scale-105 object-cover rounded-3xl `}
                   />
                 </LazyLoad>
 
@@ -149,11 +149,11 @@ const Projects = () => {
                   {testimonial.name}
                 </p>
 
-                <div className="absolute top-0 left-0 h-full w-1/3 bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105 projectheight ">
-                  <h3 className="text-lg font-semibold projectsdetails">
+                <div className="absolute top-0 left-0 h-full w-1/2 rounded-3xl bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105 projectheight">
+                  <h3 className="text-lg rounded-3xl font-semibold projectsdetails">
                     {testimonial.details}
                   </h3>
-                  <p className="mt-2 text-sm projectheight">
+                  <p className="mt-2 text-sm rounded-3xl projectheight">
                     {testimonial.location}
                   </p>
                 </div>

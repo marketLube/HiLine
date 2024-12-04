@@ -8,9 +8,9 @@ const Footer = () => {
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
   return (
     <div className="absolute bottom-0 -z-0 w-full foot-content">
-      <footer className="bg-[#1A1A1A] xl:h-3/4 text-gray-200 flex justify-between p-5 md:p-8 lg:p-0">
+      <footer className="bg-[#000000] xl:h-3/4 text-gray-200 flex justify-between p-5 md:p-8 lg:p-0">
         <div className="flex flex-col w-full">
-          <div className="flex flex-raw md:flex-row  pb-0 md:pb-12 lg:pb-0 footerdetails">
+          <div className="flex flex-raw md:flex-row pb-0 md:pb-12 lg:pb-0 footerdetails">
             <div className="w-full md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
               <div className="w-24 md:w-64 xl:w-96">
                 <div className="flex justify-center items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm">
