@@ -134,26 +134,26 @@ const Projects = () => {
                   : ""
               }`}
             >
-              <div className="relative group overflow-hidden rounded-3xl">
+              <div className="relative rounded-3xl">
                 <LazyLoad>
                   <img
                     src={testimonial.img}
                     alt={testimonial.name}
                     className={`transition-transform duration-300   ${
                       testimonial.className || ""
-                    } group-hover:scale-105 object-cover rounded-3xl `}
+                    } group-hover:scale-105 object-cover rounded-3xl`}
                   />
                 </LazyLoad>
 
-                <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-3xl transition-transform group-hover:scale-105 ">
+                <p className="absolute inset-0 flex items-center bg-black bg-opacity-45 justify-center text-white opacity-0 duration-300 group-hover:opacity-100 transition-transform project-bg group-hover:scale-105">
                   {testimonial.name}
                 </p>
 
-                <div className="absolute top-0 left-0 h-full w-1/2 rounded-3xl bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transition-transform group-hover:scale-105 projectheight">
-                  <h3 className="text-lg rounded-3xl font-semibold projectsdetails">
+                <div className="absolute top-0 left-0 h-full w-1/2  bg-black bg-opacity-0 text-white p-4 opacity-0 group-hover:opacity-100  duration-300 transition-transform group-hover:scale-105 projectheight rounded-full">
+                  <h3 className="text-lg font-semibold projectsdetails">
                     {testimonial.details}
                   </h3>
-                  <p className="mt-2 text-sm rounded-3xl projectheight">
+                  <p className="mt-2 text-sm projectheight">
                     {testimonial.location}
                   </p>
                 </div>

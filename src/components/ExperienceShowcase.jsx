@@ -43,7 +43,6 @@ const ExperienceShowcase = () => {
               </p>
             </div>
           </div>
-
           <div className="md:w-1/2 grid grid-cols-4 md:grid-cols-2 grid-rows-2 xl:gap-4 p-4 gridsection">
             <div className="flex flex-col items-center md:mb-5">
               <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
@@ -115,7 +114,6 @@ const ExperienceShowcase = () => {
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
-            render={true}
           />
         </div>
 
@@ -127,6 +125,9 @@ const ExperienceShowcase = () => {
             parentClassName="mt-0"
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
           />
+          {/* <button className="absolute top-56 md:top-[27rem] lg:top-[25rem] right-6 md:right-16 lg:right-28 xl:right-32 text-black text-xs md:text-sm lg:text-xl xl:text-2xl flex items-center bg-black rounded-3xl px-3 xl:px-7 py-1 xl:py-4 z-150">
+            <span className="uppercase ">WHAT WE DO</span>
+          </button> */}
         </div>
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
@@ -146,9 +147,6 @@ const ExperienceShowcase = () => {
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem]"
           />
         </div>
-        <button className="absolute top-56 md:top-[27rem] lg:top-[25rem] xl:top-[38rem] right-6 md:right-16 lg:right-28 xl:right-32 text-black text-xs md:text-sm lg:text-xl xl:text-2xl flex items-center bg-white rounded-3xl px-3 xl:px-7 py-1 xl:py-4 -z-50">
-          <span className="uppercase ">WHAT WE DO</span>
-        </button>
       </div>
     </div>
   );

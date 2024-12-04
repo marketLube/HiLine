@@ -7,9 +7,9 @@ const Footer = () => {
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
   return (
-    <div className="absolute bottom-0 -z-0 w-full foot-content">
+    <div className="absolute bottom-0 -z-0 w-full py-40 foot-content">
       <footer className="bg-[#000000] xl:h-3/4 text-gray-200 flex justify-between p-5 md:p-8 lg:p-0">
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full pt-8">
           <div className="flex flex-raw md:flex-row pb-0 md:pb-12 lg:pb-0 footerdetails">
             <div className="w-full md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24">
               <div className="w-24 md:w-64 xl:w-96">
@@ -117,7 +117,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center market">
+          <div className="bg-black/5 font-thin text-base md:text-xl pb-6 text-center market absolute bottom-10 left-[50%] -translate-x-[50%]">
             <span>made by </span>
             <a className=" underline " href="#">
               Marketlube

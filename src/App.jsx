@@ -40,6 +40,7 @@ function App() {
       >
         <HeadBanner />
       </div>
+
       <div className="bg-[#000000] px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-1 ">
         <div
           id="about"
@@ -78,7 +79,7 @@ function App() {
           </div>
 
           {/* <div className="h-screen bg-transparent"></div> */}
-          <div className="sticky bottom-0 h-[40rem] flex flex-col items-center justify-center foot">
+          <div className="sticky bottom-0 h-[48rem] flex flex-col items-center justify-center foot">
             <Footer />
           </div>
         </div>

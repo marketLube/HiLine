@@ -27,6 +27,11 @@ const Services = ({
         <p className="w-1/2 text-xs md:text-base lg:text-xl xl:text-2xl leading-tight mt-2 md:mt-3 lg:mt-5 xl:mt-7 text-white ">
           {description}
         </p>
+        {render && (
+          <button className="absolute top-56 md:top-[27rem] lg:top-[25rem] right-6 md:right-16 lg:right-28 xl:right-32 text-black text-xs md:text-sm lg:text-xl xl:text-2xl flex items-center bg-black rounded-3xl px-3 xl:px-7 py-1 xl:py-4 z-150">
+            <span className="uppercase ">WHAT WE DO</span>
+          </button>
+        )}
       </div>
     </section>
   );

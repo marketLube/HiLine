@@ -143,10 +143,10 @@
   .foot {
     position: static;
     margin: 0;
-    height: 19rem;
+    height: 20rem;
   }
   .foot-content {
-    padding-top: 2rem;
+    padding-bottom: 5rem;
   }
   .footerdetails {
     padding-top: 2rem;
@@ -172,6 +172,9 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 8px;
+  }
+  .project-bg {
+    border-radius: 1.5rem;
   }
 }
 
