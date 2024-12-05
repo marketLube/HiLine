@@ -170,9 +170,9 @@ const HeadBanner = () => {
               className="text-white w-7 h-7 self-end cursor-pointer"
             />
             <a
-              href="/"
+              href="#home"
               className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                location.pathname === "/" ? "bg-gray-200 text-gray-700" : ""
+                window.location.hash === "#home" ? "bg-gray-200 text-gray-700" : ""
               }`}
             >
               Home
@@ -252,7 +252,7 @@ const HeadBanner = () => {
                 className={`relative flex items-center justify-center cursor-pointer px-3 py-0.5 text-center ${
                   window.location.hash === href
                     ? "text-gray-800 font-semibold bg-white rounded-full"
-                    : "hover:text-gray-400 font-thin"
+                    : "hover:bg-gray-800 rounded-3xl font-thin"
                 }`}
               >
                 {label}

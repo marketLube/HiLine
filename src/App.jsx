@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <div
-        id="/"
+        id="home"
         className={`${activeHash === "/" ? "text-gray-800 bg-black p-4" : ""}`}
       >
         <HeadBanner />
