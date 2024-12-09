@@ -5,10 +5,25 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useRef } from "react";
 
 // import { image1 } from "../assets/images";
 
 const ClientStories = () => {
+  const swiperRef = useRef(null);
+
+  const handleVideoPlay = () => {
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.stop();
+    }
+  };
+
+  const handleVideoPause = () => {
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.start();
+    }
+  };
+
   const images = [
     {
       id: 1,
@@ -87,6 +102,7 @@ const ClientStories = () => {
             },
           }}
           className="mb-7"
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           {images.map((image) => (
             <SwiperSlide key={image.id} className="flex justify-center">
@@ -97,6 +113,8 @@ const ClientStories = () => {
                 controls
                 loop
                 muted
+                onPlay={handleVideoPlay}
+                onPause={handleVideoPause}
               />
             </SwiperSlide>
           ))}
