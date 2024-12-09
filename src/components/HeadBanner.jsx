@@ -18,11 +18,9 @@ const HeadBanner = () => {
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
 
   const imageArray = ["../assets/1hilinetop-01.webp"];
-
-  const [isMobileView, setIsMobileView] = useState(false);
-
   //   project1Img, project2Img, project3Img
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -62,13 +60,12 @@ const HeadBanner = () => {
         }}
       >
         <Parallax
-          speed={isMobileView ? 0 : -20}
-          className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top homebg"
+          speed={-10}
+          className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
           style={{
-            backgroundImage: `url("./1hilinetop-01.webp")`,
+            backgroundImage: `url("https://res.cloudinary.com/dpzy6cozb/image/upload/v1733739369/1hilinetop-01_mepgjk.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center -60px",
           }}
         ></Parallax>
 
@@ -172,7 +169,7 @@ const HeadBanner = () => {
             <a
               href="#home"
               className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#home" ? "bg-gray-200 text-gray-700" : ""
+                location.pathname === "/" ? "bg-gray-200 text-gray-700" : ""
               }`}
             >
               Home
