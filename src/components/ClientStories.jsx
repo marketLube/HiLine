@@ -6,16 +6,45 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { image1 } from "../assets/images";
+// import { image1 } from "../assets/images";
 
 const ClientStories = () => {
   const images = [
-    { id: 1, src: image1, alt: "Image 1" },
-    { id: 2, src: image1, alt: "Image 2" },
-    { id: 3, src: image1, alt: "Image 3" },
-    { id: 4, src: image1, alt: "Image 4" },
-    { id: 5, src: image1, alt: "Image 5" },
-    { id: 6, src: image1, alt: "Image 6" },
+    {
+      id: 1,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733734023/hilinereviewvdo_v3uygs.mp4",
+      alt: "Video 1 Description",
+    },
+    {
+      id: 2,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo2_in0njh.mp4",
+      alt: "Video 2 Description",
+    },
+    {
+      id: 3,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739023/hilinecsvdo3_ou6qjq.mp4",
+      alt: "Video 3 Description",
+    },
+    {
+      id: 4,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739028/hilinecsvdo4_kxfcdh.mp4",
+      alt: "Video 4 Description",
+    },
+    {
+      id: 5,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo5_cheqsu.mp4",
+      alt: "Video 5 Description",
+    },
+    {
+      id: 6,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo6_cliuiw.mp4",
+      alt: "Video 6 Description",
+    },
+    {
+      id: 7,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739036/hilinecsvdo7_qeiger.mp4",
+      alt: "Video 7 Description",
+    },
   ];
 
   return (
@@ -61,10 +90,13 @@ const ClientStories = () => {
         >
           {images.map((image) => (
             <SwiperSlide key={image.id} className="flex justify-center">
-              <img
+              <video
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
+                controls
+                loop
+                muted
               />
             </SwiperSlide>
           ))}

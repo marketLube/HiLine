@@ -49,7 +49,7 @@ const HeadBanner = () => {
           speed={-10}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top"
           style={{
-            backgroundImage: `url("./1hilinetop-01.webp")`,
+            backgroundImage: `url("https://res.cloudinary.com/dpzy6cozb/image/upload/v1733739369/1hilinetop-01_mepgjk.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
           }}
