@@ -36,7 +36,7 @@ const ExperienceShowcase = () => {
             </h1>
             <div className="md:ml-2 lg:ml-4 flex flex-col justify-center h-full parentofyear">
               <p className="lg:text-xl xl:text-2xl leading-tight years">
-                years of transforming places and
+                Years of transforming places and
               </p>
               <p className="lg:text-xl xl:text-2xl leading-tight creating">
                 creating plans that improve life

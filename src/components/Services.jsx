@@ -27,7 +27,7 @@ const Services = ({
         <span className="text-white text-xl font-medium md:text-4xl lg:text-6xl xl:text-7xl leading-tight">
           {title}
         </span>
-        <p className="w-1/2 text-xs md:text-base lg:text-xl xl:text-2xl leading-tight mt-2 md:mt-3 lg:mt-5 xl:mt-7 text-white ">
+        <p className="w-1/2 sm:text-base md:text-base lg:text-xl xl:text-2xl leading-tight mt-2 md:mt-3 lg:mt-5 xl:mt-7 text-white ">
           {description}
         </p>
         {render && (
