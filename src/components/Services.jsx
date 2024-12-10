@@ -11,7 +11,7 @@ const Services = ({
   return (
     <section
       id="hero"
-      className={`relative w-full bg-cover h-72 md:h-[32rem] lg:h-[40rem] xl:h-[58rem]  servicesection xl:rounded-[8rem]`}
+      className={`relative w-full bg-cover h-[80vh] md:h-[32rem] lg:h-[40rem] xl:h-[58rem]  servicesection xl:rounded-[8rem]`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         overflow: "hidden",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -10,15 +10,62 @@ import { image1, project1Img } from "../assets/images";
 import LazyLoad from "react-lazy-load";
 
 const ClientStories = () => {
+  const [swiperInstance, setSwiperInstance] = useState(null);
+  const [videoPlaying, setVideoPlaying] = useState(false);
+
   const images = [
-    { id: 1, src: project1Img, alt: "Image 1" },
-    { id: 2, src: project1Img, alt: "Image 2" },
-    { id: 3, src: project1Img, alt: "Image 3" },
-    { id: 4, src: project1Img, alt: "Image 4" },
-    { id: 5, src: project1Img, alt: "Image 5" },
-    { id: 6, src: project1Img, alt: "Image 6" },
+    {
+      id: 1,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739036/hilinecsvdo7_qeiger.mp4",
+      alt: "Image 1",
+    },
+    {
+      id: 2,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo2_in0njh.mp4",
+      alt: "Image 2",
+    },
+    {
+      id: 3,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo5_cheqsu.mp4",
+      alt: "Image 3",
+    },
+    {
+      id: 4,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo6_cliuiw.mp4",
+      alt: "Image 4",
+    },
+    {
+      id: 5,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739028/hilinecsvdo4_kxfcdh.mp4",
+      alt: "Image 5",
+    },
+    {
+      id: 6,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739023/hilinecsvdo3_ou6qjq.mp4",
+      alt: "Image 6",
+    },
   ];
 
+  const handleVideoPlay = () => {
+    setVideoPlaying(true);
+    if (swiperInstance) {
+      swiperInstance.autoplay.stop();
+    }
+  };
+
+  const handleVideoPause = () => {
+    setVideoPlaying(false);
+    if (swiperInstance) {
+      swiperInstance.autoplay.start();
+    }
+  };
+
+  const handleVideoEnd = () => {
+    setVideoPlaying(false);
+    if (swiperInstance) {
+      swiperInstance.autoplay.start();
+    }
+  };
   return (
     <section
       id="testimonies"
@@ -33,6 +80,7 @@ const ClientStories = () => {
           </div>
         </div>
         <Swiper
+          onInit={(swiper) => setSwiperInstance(swiper)}
           modules={[Autoplay, Navigation, Pagination]}
           autoplay={{
             delay: 3000,
@@ -63,9 +111,16 @@ const ClientStories = () => {
           {images.map((image) => (
             <SwiperSlide key={image.id} className="flex justify-center">
               <LazyLoad height={600} className="lazy">
-                <img
+                <video
                   src={image.src}
                   alt={image.alt}
+                  controls
+                  playsInline
+                  loop
+                  muted
+                  onPlay={handleVideoPlay}
+                  onPause={handleVideoPause}
+                  onEnded={handleVideoEnd}
                   className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
                 />
               </LazyLoad>

@@ -11,7 +11,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project1Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-01_hsnic0.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -19,7 +19,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project2Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-02_qpqdpq.png",
     className:
       "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -27,7 +27,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project1Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-03_pyyyg3.png",
     className:
       "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project3Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-04_jalolf.png",
     className:
       "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -43,7 +43,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project4Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-05_rscgiy.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -51,7 +51,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project3Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-06_v5gqb9.png",
     className:
       "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -60,7 +60,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Thodupuzha",
-    img: project1Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-07_stuvqq.png",
     className:
       "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -68,7 +68,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project2Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-08_dioccf.png",
     className:
       "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -76,7 +76,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project1Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-09_qetevo.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -84,7 +84,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project3Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821748/2-10_mtrl4x.png",
     className:
       "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project4Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-11_hplx6s.png",
     className:
       "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -100,7 +100,7 @@ const testimonials = [
     name: "Rahul & Sreya’s",
     details: "3BHK - 2,049 Sq. ft",
     location: "Moovattupuzha",
-    img: project3Img,
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821746/2-12_lnrbtb.png",
     className:
       "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },

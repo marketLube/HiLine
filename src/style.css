@@ -103,7 +103,7 @@
     height: 80%;
   }
   .project-img {
-    height: 20rem;
+    height: 30rem;
   }
   .projectsdetails {
     font-size: 12px;
@@ -184,6 +184,9 @@
   }
   .nav {
     z-index: 900000;
+  }
+  .rotate-icon {
+    transform: rotate(90deg);
   }
 }
 

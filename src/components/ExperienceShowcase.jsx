@@ -104,12 +104,14 @@ const ExperienceShowcase = () => {
       <div className="relative servicecomp">
         <div
           id="service"
-          className={`sticky top-0 h-screen project-img flex flex-col items-center justify-center  ${
+          className={`sticky top-0 h-screen  project-img flex flex-col items-center justify-center  ${
             activeHash === "#service" ? "text-gray-800 bg-white" : ""
           }`}
         >
           <Services
-            backgroundImage={constructionImg}
+            backgroundImage={
+              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733743963/construction_zisyuu.png"
+            }
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
@@ -119,7 +121,9 @@ const ExperienceShowcase = () => {
 
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
-            backgroundImage={consultingImg}
+            backgroundImage={
+              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733743964/consulting_xp8xsq.jpg"
+            }
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
             parentClassName="mt-0"
@@ -131,7 +135,9 @@ const ExperienceShowcase = () => {
         </div>
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
-            backgroundImage={interiorImg}
+            backgroundImage={
+              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733744557/interiorDesign_nckkgw.png"
+            }
             title="INTERIOR DESIGN"
             description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
             parentClassName="mt-0"
@@ -140,7 +146,9 @@ const ExperienceShowcase = () => {
         </div>
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
           <Services
-            backgroundImage={propertyImg}
+            backgroundImage={
+              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733744043/property_vx7kjo.png"
+            }
             title="PROPERTY MANAGEMENT"
             description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
             parentClassName="mt-0"

@@ -45,7 +45,7 @@ const InnovatingSpaces = () => {
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(${innovatingSpace1Img})`,
+            backgroundImage: `url(https://res.cloudinary.com/dpzy6cozb/image/upload/v1733733297/innovatingSpace1_r0nzag.jpg)`,
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
           }}
         ></div>
@@ -56,7 +56,7 @@ const InnovatingSpaces = () => {
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(${innovatingSpace2Img})`,
+            backgroundImage: `url(https://res.cloudinary.com/dpzy6cozb/image/upload/v1733733340/innovatingSpace2_iivmde.jpg)`,
             clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
           }}
         ></div>

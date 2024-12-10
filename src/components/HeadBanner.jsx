@@ -13,6 +13,7 @@ import { Parallax, useParallax } from "react-scroll-parallax";
 const mainBg = "../assets/1hilinetop-01.webp";
 
 const HeadBanner = () => {
+  console.log(window.location.hash, "khagshghjgsa ");
   const instagram =
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
@@ -53,6 +54,13 @@ const HeadBanner = () => {
   };
   const preloadImage = new Image();
   preloadImage.src = "./1hilinetop-01.webp";
+
+  const handleScrollToProjects = () => {
+    const element = document.getElementById("testimonial");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative bg-black pt-6 pl-6 pr-6 headbanner">
       <section
@@ -65,7 +73,7 @@ const HeadBanner = () => {
           speed={isMobileView ? 0 : -20}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top homebg"
           style={{
-            backgroundImage: `url("./1hilinetop-01.webp")`,
+            backgroundImage: `url("https://res.cloudinary.com/dpzy6cozb/image/upload/v1733744336/1hilinetop_flyorq.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center -60px",
@@ -110,7 +118,10 @@ const HeadBanner = () => {
 
               <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2 story">
                 Our Story
-                <GrFormNextLink className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white" />
+                <GrFormNextLink
+                  onClick={handleScrollToProjects}
+                  className="w-5 h-5 mt-1 md:mt-0 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 ml-2 md:ml-4 lg:ml-5 xl:ml-7 rounded-full border md:p-2 xl:p-3 border-white rotate-icon"
+                />
               </span>
             </div>
             <div className="w-1/2 lg:px-12 xl:px-20 flex flex-col righthiline">
@@ -171,50 +182,32 @@ const HeadBanner = () => {
             />
             <a
               href="#home"
-              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#home" ? "bg-gray-200 text-gray-700" : ""
-              }`}
+              className="text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1"
             >
               Home
             </a>
 
             <a
               href="#about"
-              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#about"
-                  ? "bg-gray-200 text-gray-700"
-                  : ""
-              }`}
+              className="text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1"
             >
               About
             </a>
             <a
               href="#service"
-              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#service"
-                  ? "bg-gray-200 text-gray-700"
-                  : ""
-              }`}
+              className="text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 "
             >
               Service
             </a>
             <a
               href="#projects"
-              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#projects"
-                  ? "bg-gray-200 text-gray-700"
-                  : ""
-              }`}
+              className="text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className={`text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 rounded-lg ${
-                window.location.hash === "#contact"
-                  ? "bg-gray-200 text-gray-700"
-                  : ""
-              }`}
+              className="text-sm md:text-base font-medium hover:text-gray-500 text-center px-2 py-1 text-gray-800  bg-white rounded-full"
             >
               Contact
             </a>
@@ -250,7 +243,7 @@ const HeadBanner = () => {
                 key={href}
                 href={href}
                 className={`relative flex items-center justify-center cursor-pointer px-3 py-0.5 text-center ${
-                  window.location.hash === href
+                  href === "#contact"
                     ? "text-gray-800 font-semibold bg-white rounded-full"
                     : "hover:bg-gray-800 rounded-3xl font-thin"
                 }`}
