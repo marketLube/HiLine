@@ -32,7 +32,7 @@ const ExperienceShowcase = () => {
         <div className="w-full flex items-center justify-center md:px-12 whitesection">
           <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center yearoftrans">
             <h1 className="md:text-5xl lg:text-7xl xl:text-8xl font-semibold leading-none ten">
-              10+
+              5+
             </h1>
             <div className="md:ml-2 lg:ml-4 flex flex-col justify-center h-full parentofyear">
               <p className="lg:text-xl xl:text-2xl leading-tight years">
@@ -46,7 +46,7 @@ const ExperienceShowcase = () => {
           <div className="md:w-1/2 grid grid-cols-4 md:grid-cols-2 grid-rows-2 xl:gap-4 p-4 gridsection">
             <div className="flex flex-col items-center md:mb-5">
               <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
-                12
+                5+
               </h1>
               <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Certified Engineers
@@ -54,7 +54,7 @@ const ExperienceShowcase = () => {
             </div>
             <div className="flex flex-col items-center">
               <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
-                180+
+                100+
               </h1>
               <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Happy Clients
@@ -62,15 +62,15 @@ const ExperienceShowcase = () => {
             </div>
             <div className="flex flex-col items-center md:mt-5">
               <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
-                8+
+                100+
               </h1>
               <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
-                Cities
+                All Kerala
               </span>
             </div>
             <div className="flex flex-col items-center md:mt-5">
               <h1 className="text-lg md:text-3xl lg:text-5xl xl:text-7xl font-semibold leading-none ten">
-                250
+                100+
               </h1>
               <span className="text-[9px] text-black md:text-sm lg:text-base numberhead">
                 Project Done
