@@ -6,6 +6,17 @@ const Footer = () => {
   const instagram =
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
+
+  const handleWhatsAppClick = (event) => {
+    event.preventDefault();
+    const whatsappURL = "whatsapp://send?phone=+9633747727";
+    if (window.location.href.includes("whatsapp://")) {
+      window.location.href = whatsappURL;
+    } else {
+      window.open("https://wa.me/9633747727", "_blank");
+    }
+  };
+
   return (
     <div className="absolute bottom-0 -z-0 w-full py-40 foot-content ">
       <footer className="bg-[#282525] xl:h-3/4 text-gray-200 flex justify-between p-5 md:p-8 lg:p-0  mainFoot">
@@ -97,7 +108,7 @@ const Footer = () => {
                       href="whatsapp://send?phone=+9633747727"
                       target="_blank"
                       className="[&>svg]:h-4 [&>svg]:w-4 text-black bg-white rounded-full p-2"
-                      onclick="if (!window.open('whatsapp://send?phone=+9633747727', '_blank')) window.location.href='https://wa.me/9633747727';"
+                      onClick={handleWhatsAppClick}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
