@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Video5 from "../assets/video5.mp4";
+import Video5 from "../assets/demovdo.mp4";
 
 import { image1, project1Img } from "../assets/images";
 import Demo from "../assets/demo.jpeg";
