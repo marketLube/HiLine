@@ -115,6 +115,8 @@ const ClientStories = () => {
               <video
                 src={image.src}
                 alt={image.alt}
+                type="video/mp4"
+                preload="auto"
                 controls
                 playsInline
                 loop
@@ -122,7 +124,6 @@ const ClientStories = () => {
                 onPlay={handleVideoPlay}
                 onPause={handleVideoPause}
                 onEnded={handleVideoEnd}
-                // poster={Demo}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
               />
               {/* </LazyLoad> */}
