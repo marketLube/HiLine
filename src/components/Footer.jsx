@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex flex-raw md:flex-row pb-0 md:pb-12 lg:pb-0 footerdetails">
             <div className="w-full md:w-1/2 flex justify-center md:justify-between items-center lg:py-16 lg:px-5 xl:py-28 xl:px-24 footLog">
               <div className="w-24 md:w-64 xl:w-96">
-                <div className="flex justify-center items-center  pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm ">
+                <div className="grid place-items-center pb-5 sm:w-40 sm:h-12 md:w-52 md:h-14 font-thin text-sm">
                   <LogoHiline />
                 </div>
               </div>
