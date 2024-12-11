@@ -20,32 +20,37 @@ const ClientStories = () => {
       id: 1,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739036/hilinecsvdo7_qeiger.mp4",
       alt: "Image 1",
+      img: "./first.jpeg",
     },
     {
       id: 2,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
-
       alt: "Image 2",
+      img: "./second.jpeg",
     },
     {
       id: 3,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo5_cheqsu.mp4",
       alt: "Image 3",
+      img: "./third.jpeg",
     },
     {
       id: 4,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo6_cliuiw.mp4",
       alt: "Image 4",
+      img: "./fourth.jpeg",
     },
     {
       id: 5,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739028/hilinecsvdo4_kxfcdh.mp4",
       alt: "Image 5",
+      img: "./fift.jpeg",
     },
     {
       id: 6,
       src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739023/hilinecsvdo3_ou6qjq.mp4",
       alt: "Image 6",
+      img: "sixth.jpeg",
     },
   ];
 
@@ -133,7 +138,7 @@ const ClientStories = () => {
               <video
                 controls
                 muted
-                // poster="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75"
+                poster={image.img}
                 autoPlay={false}
                 onEnded={handleVideoEnd}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
