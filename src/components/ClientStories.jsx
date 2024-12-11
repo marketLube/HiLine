@@ -23,8 +23,8 @@ const ClientStories = () => {
     },
     {
       id: 2,
-      // src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
-      src: Video5,
+      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
+
       alt: "Image 2",
     },
     {
@@ -131,13 +131,10 @@ const ClientStories = () => {
               {/* </LazyLoad> */}
 
               <video
-                preload="auto"
                 controls
-                playsInline
-                loop
                 muted
-                onPlay={handleVideoPlay}
-                onPause={handleVideoPause}
+                poster="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75"
+                autoPlay={false}
                 onEnded={handleVideoEnd}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
               >
