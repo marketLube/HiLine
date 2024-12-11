@@ -133,7 +133,7 @@ const ClientStories = () => {
               <video
                 controls
                 muted
-                poster="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75"
+                // poster="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75"
                 autoPlay={false}
                 onEnded={handleVideoEnd}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
