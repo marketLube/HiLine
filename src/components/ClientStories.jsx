@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Video5 from "../assets/video5.mp4";
 
 import { image1, project1Img } from "../assets/images";
 import Demo from "../assets/demo.jpeg";
@@ -22,7 +23,8 @@ const ClientStories = () => {
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
+      // src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
+      src: Video5,
       alt: "Image 2",
     },
     {
