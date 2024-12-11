@@ -114,7 +114,7 @@ const ClientStories = () => {
           {images.map((image) => (
             <SwiperSlide key={image.id} className="flex justify-center">
               {/* <LazyLoad height={600} className="lazy"> */}
-              <video
+              {/* <video
                 src={image.src}
                 alt={image.alt}
                 type="video/mp4"
@@ -127,8 +127,22 @@ const ClientStories = () => {
                 onPause={handleVideoPause}
                 onEnded={handleVideoEnd}
                 className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
-              />
+              /> */}
               {/* </LazyLoad> */}
+
+              <video
+                preload="auto"
+                controls
+                playsInline
+                loop
+                muted
+                onPlay={handleVideoPlay}
+                onPause={handleVideoPause}
+                onEnded={handleVideoEnd}
+                className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
+              >
+                <source src={image.src} type="video/mp4" />
+              </video>
             </SwiperSlide>
           ))}
         </Swiper>
