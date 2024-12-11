@@ -60,6 +60,17 @@ const HeadBanner = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleWhatsAppClick = (event) => {
+    event.preventDefault();
+    const whatsappURL = "whatsapp://send?phone=+9633747727";
+    if (window.location.href.includes("whatsapp://")) {
+      window.location.href = whatsappURL;
+    } else {
+      window.open("https://wa.me/9633747727", "_blank");
+    }
+  };
+
   return (
     <div className="relative bg-[#282525] pt-6 pl-6 pr-6 headbanner">
       <section
@@ -289,6 +300,7 @@ const HeadBanner = () => {
               href="whatsapp://send?phone=+9633747727"
               target="_blank"
               className="[&>svg]:h-4 [&>svg]:w-4 hover:text-gray-500 bg-white rounded-full p-2"
+              onClick={handleWhatsAppClick}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
