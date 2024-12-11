@@ -27,7 +27,7 @@ const ExperienceShowcase = () => {
     };
   }, []);
   return (
-    <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[6rem] -mt-8 md:-mt-16 ">
+    <div className="relative w-full bg-white rounded-t-3xl md:rounded-t-[4rem] lg:rounded-t-[3rem] -mt-8 md:-mt-16 ">
       <div className="relative container mx-auto text-center z-10">
         <div className="w-full flex items-center justify-center md:px-12 whitesection">
           <div className="hidden w-1/2 md:h-72 lg:h-96 xl:h-[30rem] md:flex justify-center items-center yearoftrans">
@@ -79,22 +79,22 @@ const ExperienceShowcase = () => {
           </div>
         </div>
         <div className="border border-gray-300"></div>
-        <div className="w-full px-5 md:px-10 lg:px-16 xl:px-24 grid grid-cols-3 gap-4 h-44 md:h-56 lg:h-64 xl:h-80">
+        <div className="w-full px-5 p-6 md:px-10 lg:px-16 xl:px-24 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 h-80 md:h-56 lg:h-64 xl:h-80 justify-items-center items-center whiteSecSecond">
           <div className="flex flex-col justify-center items-center">
             <FaRegClock className="w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-16 xl:h-16 border border-black rounded-full p-2 lg:p-3 xl:p-4 " />
-            <p className="text-xs md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
+            <p className="text-xs font-medium md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
               On Time Delivery
             </p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <VscWorkspaceTrusted className=" w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-16 xl:h-16 border border-black rounded-full p-2 lg:p-3 xl:p-4 " />
-            <p className="text-xs md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
+            <p className="text-xs font-medium md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
               Life Long Service
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center w-full md:w-auto col-span-2 md:col-span-1">
             <MdOutlineWorkspacePremium className="w-8 h-8 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-16 xl:h-16 border border-black rounded-full p-1 lg:p-2 xl:p-3 " />
-            <p className="text-xs md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
+            <p className="text-xs font-medium md:text-base lg:text-xl xl:text-2xl leading-tight mt-3">
               Premium Material
             </p>
           </div>
@@ -112,8 +112,10 @@ const ExperienceShowcase = () => {
             backgroundImage={
               "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733743963/construction_zisyuu.png"
             }
-            title="CONSULTING"
-            description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
+            title="CONSTRUCTION"
+            description="We build enduring, high-quality structures with
+precision, craftsmanship, and a commitment to
+excellence."
             parentClassName="mt-0"
             curveClassName="rounded-[1.5rem] md:rounded-[4.5rem] lg:rounded-[6.5rem] xl:rounded-[8rem] overflow-hidden"
           />

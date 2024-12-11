@@ -36,12 +36,14 @@ function App() {
     <>
       <div
         id="home"
-        className={`${activeHash === "/" ? "text-gray-800 bg-black p-4" : ""}`}
+        className={`${
+          activeHash === "/" ? "text-gray-800 bg-[#282525] p-4" : ""
+        }`}
       >
         <HeadBanner />
       </div>
 
-      <div className="bg-[#000000] px-3 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-1 ">
+      <div className="bg-[#282525] px-2 md:px-5 lg:px-4 pt-3 md:pt-5 lg:pt-1 ">
         <div
           id="about"
           className={`${

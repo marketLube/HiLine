@@ -13,7 +13,6 @@ import { Parallax, useParallax } from "react-scroll-parallax";
 const mainBg = "../assets/1hilinetop-01.webp";
 
 const HeadBanner = () => {
-  console.log(window.location.hash, "khagshghjgsa ");
   const instagram =
     "https://www.instagram.com/hiline.developers/?igsh=eXI4dDZkMHV4N21p";
   const facebook = "https://www.facebook.com/share/1MHGRSuTjZ/?mibextid=LQQJ4d";
@@ -62,9 +61,9 @@ const HeadBanner = () => {
     }
   };
   return (
-    <div className="relative bg-black pt-6 pl-6 pr-6 headbanner">
+    <div className="relative bg-[#282525] pt-6 pl-6 pr-6 headbanner">
       <section
-        className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top "
+        className="relative w-full rounded-t-2xl md:rounded-t-[3.5rem] bg-cover bg-center xl:bg-top topcornner"
         style={{
           overflow: "hidden",
         }}
@@ -116,7 +115,7 @@ const HeadBanner = () => {
                 craftsmanship
               </span>
 
-              <span className="text-white mt-1 lg:mt-5 font-thin text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2 story">
+              <span className="text-white mt-1 lg:mt-5 font-normal text-sm lg:text-lg xl:text-xl leading-tight flex items-center space-x-2 story">
                 Our Story
                 <GrFormNextLink
                   onClick={handleScrollToProjects}

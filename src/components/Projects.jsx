@@ -116,13 +116,13 @@ const Projects = () => {
       <div className="max-w-full md:px-10 lg:px-16 xl:px-32">
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
           <div className="mb-14 md:mb-16 space-y-5 lg:mb-24 text-center">
-            <p className="text-lg md:text-xl text-gray-700 text-center">
+            <p className="text-lg md:text-xl text-gray-700 text-center projectHead">
               PROJECTS
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-6 xl:gap-11">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-6 xl:gap-11 projectSec">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

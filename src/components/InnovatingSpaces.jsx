@@ -64,7 +64,7 @@ const InnovatingSpaces = () => {
 
       {/* Overlay Text */}
       <div className="absolute inset-0 flex items-end justify-start p-9 md:p-16 xl:p-28 pointer-events-none">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-white ivspace">
           INNOVATING SPACES
         </h1>
       </div>
@@ -72,11 +72,11 @@ const InnovatingSpaces = () => {
       {/* Slider Pointer */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-0 bottom-0 bg-white w-[3px] -translate-x-1/2 pointer-events-auto"
+          className="absolute top-0 bottom-0 bg-white w-[2px] -translate-x-1/2 pointer-events-auto mouseLine"
           style={{ left: `${sliderPosition}%` }}
         >
           <div
-            className="absolute bg-white justify-center w-3.5 h-24 -translate-x-1/2"
+            className="absolute bg-white justify-center w-1.5  h-24 -translate-x-1/2 mousePointer"
             style={{ top: `${pointerPosition}%` }}
           ></div>
         </div>

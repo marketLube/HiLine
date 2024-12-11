@@ -4,9 +4,9 @@ import { Parallax } from "react-scroll-parallax";
 const Contact = () => {
   return (
     <div className="bg-white md:-m-0 md:h-[30rem] lg:h-[15rem] xl:h-[52rem]  w-full flex flex-col justify-center items-center rounded-b-2xl md:rounded-b-[3rem] lg:rounded-b-[5rem] xl:rounded-b-[7rem] contact">
-      <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+      <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100 contactHead">
         <div className="md:mt-16 lg:mt-0 mb-5 md:mb-16 space-y-5 lg:mb-24 text-center">
-          <p className="text-lg md:text-xl text-gray-700 text-center contacthead">
+          <p className="text-lg sm:text-sm font-semibold md:text-xl text-gray-700 text-center contacthead">
             CONTACT
           </p>
         </div>
