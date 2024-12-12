@@ -141,7 +141,9 @@ const ClientStories = () => {
                 poster={image.img}
                 autoPlay={false}
                 onEnded={handleVideoEnd}
-                className="w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover lazyimg"
+                onPlay={handleVideoPlay}
+                onPause={handleVideoPause}
+                className="lazyimg w-full h-64 md:h-72 lg:h-96 xl:h-[500px] rounded-2xl object-cover"
               >
                 <source src={image.src} type="video/mp4" />
               </video>
