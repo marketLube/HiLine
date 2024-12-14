@@ -8,101 +8,101 @@ import {
 
 const testimonials = [
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-01_hsnic0.png",
+    name: "Hafnas",
+    details: "3BHK - 4800Sq.ft",
+    location: "Vadakara",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-07_stuvqq.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-02_qpqdpq.png",
+    name: "Sachin",
+    details: "3BHK - 1904Sq.ft",
+    location: "Kakkodi",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-06_v5gqb9.png",
     className:
-      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    details: "3BHK - 2300Sq.ft",
     location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-03_pyyyg3.png",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821748/2-10_mtrl4x.png",
     className:
-      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-04_jalolf.png",
+    name: "Vyshakh",
+    details: "5BHK - 2981Sq.ft",
+    location: "Kottayam",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1734152078/vyshakh_c0n3nq.jpg",
     className:
-      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    name: "Cisel Binoy",
+    details: "4BHK - 2250Sq.ft",
     location: "Moovattupuzha",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-05_rscgiy.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    name: "Ashik",
+    details: "5BHK - 4800Sq.ft",
     location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-06_v5gqb9.png",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-03_pyyyg3.png",
     className:
-      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    name: "Mubjina pavas",
+    details: "3BHK - 2,049Sq.ft",
     location: "Thodupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-07_stuvqq.png",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-01_hsnic0.png",
     className:
-      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
+    details: "4BHK - 2250Sq.ft",
+    location: "Kannur",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-08_dioccf.png",
     className:
-      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
     name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    details: "3BHK - 2,049Sq.ft",
     location: "Moovattupuzha",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-09_qetevo.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821748/2-10_mtrl4x.png",
-    className:
-      "h-52 md:h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
-  },
-  {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
+    name: "Cisel Binoy",
+    details: "3BHK - 2250Sq.ft",
     location: "Moovattupuzha",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-11_hplx6s.png",
     className:
-      "h-52 md:h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2,049 Sq. ft",
-    location: "Moovattupuzha",
+    name: "Rahman",
+    details: "3BHK - 6000Sq.ft",
+    location: "Valanchery",
+    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733747279/valanjery_side_1_sat4vq.jpg",
+    className:
+      "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+  },
+  {
+    name: "Rekha",
+    details: "3BHK - 2,049Sq.ft",
+    location: "Karaparambu",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821746/2-12_lnrbtb.png",
     className:
-      "h-60 -mt-8 md:-mt-0 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
+      "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 ];
 const arr = [4, 6, 7, 8, 9, 11];

@@ -42,7 +42,7 @@ const Footer = () => {
                     <a
                       href={href}
                       className={`w-full block  px-4 py-1 font-medium text-lg ${
-                        window.location.hash === href
+                        href === "#contact"
                           ? "text-gray-800 bg-white rounded-lg"
                           : "hover:text-gray-400"
                       }`}
@@ -58,8 +58,9 @@ const Footer = () => {
                 <div className="mb-4 flex justify-center md:justify-start ">
                   <div>
                     <p className="w-52 md:w-65 font-normal footerlorem">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                      sed diam nonummy nibh euismod tincidunt ut{" "}
+                      A18, 2nd Floor, Sree Hari Building, 5/854, NH bypass, near
+                      Decathlon Rd, Kodal Nadakkavu, Pantheeramkavu,
+                      Pantheerankave, Kerala 673019
                     </p>
                   </div>
                 </div>
@@ -70,7 +71,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mb-4 flex items-center justify-start font-normal footermail">
-                  +91 9526457322
+                  +91 96337 47727
                 </div>
 
                 <div className="flex items-center justify-start ">
