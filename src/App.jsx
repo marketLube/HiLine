@@ -73,7 +73,7 @@ function App() {
         <div className="relative">
           <div
             id="contact"
-            className={`sticky bottom-0 flex flex-col items-center justify-center z-10 contactdetail contact-body ${
+            className={`sticky bottom-0 flex flex-col items-center justify-center z-10 rounded-b-[6rem] contactdetail contact-body  ${
               activeHash === "#contact" ? "text-gray-800 bg-white" : ""
             }`}
           >

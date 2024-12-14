@@ -128,6 +128,7 @@
   .contact {
     position: static;
     z-index: 1000;
+    background-color: white;
     border-bottom-left-radius: 3rem !important;
     border-bottom-right-radius: 3rem !important;
   }
@@ -285,7 +286,7 @@
 }
 
 /* 2x extra large devices (Extra Large Desktop) */
-@media (max-width: 1536px) {
+@media (max-width: 1800px) {
 }
 
 .servicesection {
