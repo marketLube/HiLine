@@ -24,9 +24,9 @@ const testimonials = [
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
-    details: "3BHK - 2300Sq.ft",
-    location: "Moovattupuzha",
+    name: "Dr Balakrishnan",
+    details: "3BHK - 2700Sq.ft",
+    location: "Calicut ULCCS One Anthum",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821748/2-10_mtrl4x.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
@@ -42,7 +42,7 @@ const testimonials = [
   {
     name: "Cisel Binoy",
     details: "4BHK - 2250Sq.ft",
-    location: "Moovattupuzha",
+    location: "Vellimadukunnu, Calicut",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-05_rscgiy.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
@@ -50,40 +50,40 @@ const testimonials = [
   {
     name: "Ashik",
     details: "5BHK - 4800Sq.ft",
-    location: "Moovattupuzha",
+    location: "Kunnamkulam",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-03_pyyyg3.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 
   {
-    name: "Mubjina pavas",
+    name: "Mubjina",
     details: "3BHK - 2,049Sq.ft",
-    location: "Thodupuzha",
+    location: "Kannur",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-01_hsnic0.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
+    name: "Satheesh",
     details: "4BHK - 2250Sq.ft",
-    location: "Kannur",
+    location: "Thrissur",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-08_dioccf.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rahul & Sreya’s",
+    name: "Arjun Mayanad",
     details: "3BHK - 2,049Sq.ft",
-    location: "Moovattupuzha",
+    location: "Calicut",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-09_qetevo.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Cisel Binoy",
-    details: "3BHK - 2250Sq.ft",
-    location: "Moovattupuzha",
+    name: "Ashraf",
+    details: "3BHK - 6250Sq.ft",
+    location: "Chaliyam",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-11_hplx6s.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
@@ -91,20 +91,21 @@ const testimonials = [
   {
     name: "Rahman",
     details: "3BHK - 6000Sq.ft",
-    location: "Valanchery",
+    location: "Pattambi, Commercial space",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733747279/valanjery_side_1_sat4vq.jpg",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
   {
-    name: "Rekha",
-    details: "3BHK - 2,049Sq.ft",
-    location: "Karaparambu",
+    name: "Soma Sundaran",
+    details: "3BHK - 1330Sq.ft",
+    location: "Karaparamb",
     img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821746/2-12_lnrbtb.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
 ];
+
 const arr = [4, 6, 7, 8, 9, 11];
 
 const Projects = () => {
