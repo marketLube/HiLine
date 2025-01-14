@@ -11,7 +11,7 @@ const testimonials = [
     name: "Hafnas",
     details: "3BHK - 4800Sq.ft",
     location: "Vadakara",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-07_stuvqq.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854733/2-07_p32vml.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -19,7 +19,7 @@ const testimonials = [
     name: "Sachin",
     details: "3BHK - 1904Sq.ft",
     location: "Kakkodi",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-06_v5gqb9.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854736/2-06_cfmx7w.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -27,7 +27,7 @@ const testimonials = [
     name: "Dr Balakrishnan",
     details: "3BHK - 2700Sq.ft",
     location: "Calicut ULCCS One Anthum",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821748/2-10_mtrl4x.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854744/2-10_crf7pw.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     name: "Vyshakh",
     details: "5BHK - 2981Sq.ft",
     location: "Kottayam",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1734152078/vyshakh_c0n3nq.jpg",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854119/vyshak_dimtsk.jpg",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -43,7 +43,7 @@ const testimonials = [
     name: "Cisel Binoy",
     details: "4BHK - 2250Sq.ft",
     location: "Vellimadukunnu, Calicut",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-05_rscgiy.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854733/2-05_mudutl.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -51,7 +51,7 @@ const testimonials = [
     name: "Ashik",
     details: "5BHK - 4800Sq.ft",
     location: "Kunnamkulam",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821744/2-03_pyyyg3.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854740/2-03_hzoxql.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -60,7 +60,7 @@ const testimonials = [
     name: "Mubjina",
     details: "3BHK - 2,049Sq.ft",
     location: "Kannur",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-01_hsnic0.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854737/2-01_r1ug6e.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -68,7 +68,7 @@ const testimonials = [
     name: "Satheesh",
     details: "4BHK - 2250Sq.ft",
     location: "Thrissur",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-08_dioccf.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854749/2-08_gwccir.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -76,7 +76,7 @@ const testimonials = [
     name: "Arjun Mayanad",
     details: "3BHK - 2,049Sq.ft",
     location: "Calicut",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-09_qetevo.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854746/2-09_atkbww.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -84,7 +84,7 @@ const testimonials = [
     name: "Ashraf",
     details: "3BHK - 6250Sq.ft",
     location: "Chaliyam",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821745/2-11_hplx6s.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854747/2-11_wviwwt.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -92,7 +92,7 @@ const testimonials = [
     name: "Rahman",
     details: "3BHK - 6000Sq.ft",
     location: "Pattambi, Commercial space",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733747279/valanjery_side_1_sat4vq.jpg",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854742/2-02_xl1fqv.png",
     className:
       "h-60 lg:h-96 xl:h-[470px] object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },
@@ -100,7 +100,7 @@ const testimonials = [
     name: "Soma Sundaran",
     details: "3BHK - 1330Sq.ft",
     location: "Karaparamb",
-    img: "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733821746/2-12_lnrbtb.png",
+    img: "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736854737/2-12_xzehmk.png",
     className:
       "h-60 lg:h-80 xl:h-96 object-cover w-full md:rounded-3xl lg:rounded-[2.6rem]",
   },

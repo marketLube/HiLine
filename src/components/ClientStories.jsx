@@ -18,37 +18,37 @@ const ClientStories = () => {
   const images = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739036/hilinecsvdo7_qeiger.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852584/VID1_x2t0np.mp4",
       alt: "Image 1",
       img: "./first.jpeg",
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733896939/hilineclinetstory_um2kj7.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852593/VID-2_bucklu.mp4",
       alt: "Image 2",
       img: "./second.jpeg",
     },
     {
       id: 3,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo5_cheqsu.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852588/VID-3_oxalvb.mp4",
       alt: "Image 3",
       img: "./third.jpeg",
     },
     {
       id: 4,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739030/hilinecsvdo6_cliuiw.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852585/VID-4_jhsjqw.mp4",
       alt: "Image 4",
       img: "./fourth.jpeg",
     },
     {
       id: 5,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739028/hilinecsvdo4_kxfcdh.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852600/VID-5_rzsxqy.mp4",
       alt: "Image 5",
       img: "./fift.jpeg",
     },
     {
       id: 6,
-      src: "https://res.cloudinary.com/dpzy6cozb/video/upload/v1733739023/hilinecsvdo3_ou6qjq.mp4",
+      src: "https://res.cloudinary.com/dzuqczvb7/video/upload/v1736852586/VID-6_tivkxa.mp4",
       alt: "Image 6",
       img: "sixth.jpeg",
     },

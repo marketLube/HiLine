@@ -110,7 +110,7 @@ const ExperienceShowcase = () => {
         >
           <Services
             backgroundImage={
-              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733743963/construction_zisyuu.png"
+              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850663/construction_hpsn0r.png"
             }
             title="CONSTRUCTION"
             description="We build enduring, high-quality structures with
@@ -124,7 +124,7 @@ excellence."
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
             backgroundImage={
-              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733743964/consulting_xp8xsq.jpg"
+              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850815/consulting_bvn7wy.jpg"
             }
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
@@ -138,7 +138,7 @@ excellence."
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
             backgroundImage={
-              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733744557/interiorDesign_nckkgw.png"
+              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736851154/interiorDesign_o2qfmz.jpg"
             }
             title="INTERIOR DESIGN"
             description="We create inspiring, functional interiors tailored to reflect your style and optimize every space with elegance and purpose."
@@ -149,7 +149,7 @@ excellence."
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center  rounded-t-[1.5rem] md:rounded-t-[4.5rem] lg:rounded-t-[6.5rem] xl:rounded-t-[8rem] z-[4]">
           <Services
             backgroundImage={
-              "https://res.cloudinary.com/dpzy6cozb/image/upload/v1733744043/property_vx7kjo.png"
+              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850830/property_ejuvpb.png"
             }
             title="PROPERTY MANAGEMENT"
             description="Our property management services ensure your assets are well-maintained, efficiently managed, and consistently add value, giving you peace of mind."
