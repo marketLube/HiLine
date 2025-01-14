@@ -124,7 +124,7 @@ excellence."
         <div className="sticky top-0 h-screen project-img flex flex-col items-center justify-center ">
           <Services
             backgroundImage={
-              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850815/consulting_bvn7wy.jpg"
+              "https://res.cloudinary.com/dzuqczvb7/image/upload/v1736855730/consulting_yyjukf.jpg"
             }
             title="CONSULTING"
             description="Our consulting services provide expert guidance at every project stage, ensuring efficient planning, smart solutions, and successful outcomes."
