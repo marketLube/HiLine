@@ -83,7 +83,7 @@ const HeadBanner = () => {
           speed={isMobileView ? 0 : -20}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top homebg"
           style={{
-            backgroundImage: `url("https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850482/hilineHome_jg5rex.jpg")`,
+            backgroundImage: `url("https://res.cloudinary.com/dzuqczvb7/image/upload/v1737092490/1hilinetopNew_p7ytmg.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center -60px",
