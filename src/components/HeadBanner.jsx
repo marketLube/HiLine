@@ -83,7 +83,7 @@ const HeadBanner = () => {
           speed={isMobileView ? 0 : -20}
           className="absolute top-0 left-0 right-0 bottom-0 bg-center xl:bg-top homebg"
           style={{
-            backgroundImage: `url("https://res.cloudinary.com/dzuqczvb7/image/upload/v1737092490/1hilinetopNew_p7ytmg.webp")`,
+            backgroundImage: `url("https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/Hiline/1hilinetopNew_p7ytmg.webp")`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center -60px",

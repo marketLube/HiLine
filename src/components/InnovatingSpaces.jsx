@@ -45,7 +45,7 @@ const InnovatingSpaces = () => {
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850814/innovatingSpace1_ywzghz.jpg)`,
+            backgroundImage: `url(https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/Hiline/innovatingSpace1_ywzghz.jpg)`,
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
           }}
         ></div>
@@ -56,7 +56,7 @@ const InnovatingSpaces = () => {
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://res.cloudinary.com/dzuqczvb7/image/upload/v1736850820/innovatingSpace2_pamt8b.jpg)`,
+            backgroundImage: `url(https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/Hiline/innovatingSpace2_pamt8b.jpg)`,
             clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
           }}
         ></div>
